@@ -49,7 +49,7 @@ $dark-gray: #333447; // for the Americans
 
 // grid
 
-$width: 98%;
+$width: 100%;
 $gutter: 4%;
 $breakpoint-small: 33.75em; // 540px
 $breakpoint-med: 45em; // 720px
@@ -132,4 +132,16 @@ $breakpoint-large: 60em; // 960px
   .hidden-sm {
     display: block;
   }
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
 }
