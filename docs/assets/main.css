@@ -792,4 +792,4 @@ a.btn {
 
 .trusted-by {
   margin-top: 30px;
-  filter: grayscale(1); }
+  filter: saturate(0.3); }
