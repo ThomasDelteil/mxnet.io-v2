@@ -1,4 +1,4 @@
-/**
+  /**
  * Reset some basic elements
  */
 body, h1, h2, h3, h4, h5, h6,
@@ -7,9 +7,7 @@ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
 }
-
 body {
-  background: url("/assets/img/mxnet-background-compressed.jpeg");
   background-repeat: no-repeat;
   background-size: contain;
   min-height:100%;
