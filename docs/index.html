@@ -22,11 +22,15 @@
 
   <script>
          $(document).ready(function(){
-            $(window).scroll(function(){
-              var value =  "rgba(4,140,204," + $(window).scrollTop() / 100 +")"
+            function opacity_header() {
+              var value =  "rgba(4,140,204," +  $(window).scrollTop() / 100 +")"
               console.log(value);
               $('.site-header').css("background-color",value)
+            }
+            $(window).scroll(function(){
+              opacity_header()
             })
+            opacity_header();
         })
   </script>
   <div class="wrapper"><a class="site-title" rel="author" href="/mxnet.io-v2/"><img src="assets/img/mxnet_logo.png" class="site-header-logo"></a><nav class="site-nav">
@@ -92,7 +96,7 @@
                         <div class="card">
                             <div class="card-text">
                                 <h3>8 languages bindings</h3>
-                                <p>Deep integration into Python and support Scala, Julia, Clojure, Java, C++, R and Perl.</p>
+                                <p>Deep integration into Python and support for Scala, Julia, Clojure, Java, C++, R and Perl.</p>
                             </div>
                             <div class="key-feature-image">
                                     <img width=50px src="/mxnet.io-v2/assets/img/programming.svg">

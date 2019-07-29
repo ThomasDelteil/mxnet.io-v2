@@ -24,11 +24,15 @@
 
   <script>
          $(document).ready(function(){
-            $(window).scroll(function(){
-              var value =  "rgba(4,140,204," + $(window).scrollTop() / 100 +")"
+            function opacity_header() {
+              var value =  "rgba(4,140,204," +  $(window).scrollTop() / 100 +")"
               console.log(value);
               $('.site-header').css("background-color",value)
+            }
+            $(window).scroll(function(){
+              opacity_header()
             })
+            opacity_header();
         })
   </script>
   <div class="wrapper"><a class="site-title" rel="author" href="/mxnet.io-v2/"><img src="assets/img/mxnet_logo.png" class="site-header-logo"></a><nav class="site-nav">

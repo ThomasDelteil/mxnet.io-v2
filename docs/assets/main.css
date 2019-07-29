@@ -28,7 +28,7 @@ body {
   display: none; }
 
 .container {
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto; }
   @media only screen and (min-width: 33.75em) {
@@ -45,7 +45,7 @@ body {
 
 .row [class^="col"] {
   float: left;
-  margin: 0.5rem 2%;
+  margin: 1rem 1%;
   min-height: 0.125rem; }
 
 .row::after {
@@ -65,80 +65,80 @@ body {
 .col-10,
 .col-11,
 .col-12 {
-  width: 96%; }
+  width: 98%; }
 
 .col-1-sm {
-  width: 4.3333333333%; }
+  width: 4.5%; }
 
 .col-2-sm {
-  width: 12.6666666667%; }
+  width: 13%; }
 
 .col-3-sm {
-  width: 21%; }
+  width: 21.5%; }
 
 .col-4-sm {
-  width: 29.3333333333%; }
+  width: 30%; }
 
 .col-5-sm {
-  width: 37.6666666667%; }
+  width: 38.5%; }
 
 .col-6-sm {
-  width: 46%; }
+  width: 47%; }
 
 .col-7-sm {
-  width: 54.3333333333%; }
+  width: 55.5%; }
 
 .col-8-sm {
-  width: 62.6666666667%; }
+  width: 64%; }
 
 .col-9-sm {
-  width: 71%; }
+  width: 72.5%; }
 
 .col-10-sm {
-  width: 79.3333333333%; }
+  width: 81%; }
 
 .col-11-sm {
-  width: 87.6666666667%; }
+  width: 89.5%; }
 
 .col-12-sm {
-  width: 96%; }
+  width: 98%; }
 
 @media only screen and (min-width: 45em) {
   .col-1 {
-    width: 4.3333333333%; }
+    width: 4.5%; }
 
   .col-2 {
-    width: 12.6666666667%; }
+    width: 13%; }
 
   .col-3 {
-    width: 21%; }
+    width: 21.5%; }
 
   .col-4 {
-    width: 29.3333333333%; }
+    width: 30%; }
 
   .col-5 {
-    width: 37.6666666667%; }
+    width: 38.5%; }
 
   .col-6 {
-    width: 46%; }
+    width: 47%; }
 
   .col-7 {
-    width: 54.3333333333%; }
+    width: 55.5%; }
 
   .col-8 {
-    width: 62.6666666667%; }
+    width: 64%; }
 
   .col-9 {
-    width: 71%; }
+    width: 72.5%; }
 
   .col-10 {
-    width: 79.3333333333%; }
+    width: 81%; }
 
   .col-11 {
-    width: 87.6666666667%; }
+    width: 89.5%; }
 
   .col-12 {
-    width: 96%; }
+    width: 98%; }
 
   .hidden-sm {
     display: block; } }
@@ -164,7 +164,10 @@ body {
  * Basic styling
  */
 body {
-  font: 250 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", FreightSans, Helvetica Neue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 250;
+  font-size: 17px;
+  line-height: 1.5;
   color: white;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -748,7 +751,7 @@ a.btn {
       color: black; }
 
 .card-header-title {
-  display: flow-root; }
+  height: 50px; }
 
 .card-header-title h3 {
   float: left; }
