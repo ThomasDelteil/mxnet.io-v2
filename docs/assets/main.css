@@ -28,7 +28,7 @@ body {
   display: none; }
 
 .container {
-  width: 95%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto; }
   @media only screen and (min-width: 33.75em) {
@@ -45,7 +45,7 @@ body {
 
 .row [class^="col"] {
   float: left;
-  margin: 1rem 1%;
+  margin: 0.5rem 2%;
   min-height: 0.125rem; }
 
 .row::after {
@@ -65,80 +65,80 @@ body {
 .col-10,
 .col-11,
 .col-12 {
-  width: 100%; }
+  width: 96%; }
 
 .col-1-sm {
-  width: 4.6666666667%; }
+  width: 4.3333333333%; }
 
 .col-2-sm {
-  width: 13.3333333333%; }
+  width: 12.6666666667%; }
 
 .col-3-sm {
-  width: 22%; }
+  width: 21%; }
 
 .col-4-sm {
-  width: 30.6666666667%; }
+  width: 29.3333333333%; }
 
 .col-5-sm {
-  width: 39.3333333333%; }
+  width: 37.6666666667%; }
 
 .col-6-sm {
-  width: 48%; }
+  width: 46%; }
 
 .col-7-sm {
-  width: 56.6666666667%; }
+  width: 54.3333333333%; }
 
 .col-8-sm {
-  width: 65.3333333333%; }
+  width: 62.6666666667%; }
 
 .col-9-sm {
-  width: 74%; }
+  width: 71%; }
 
 .col-10-sm {
-  width: 82.6666666667%; }
+  width: 79.3333333333%; }
 
 .col-11-sm {
-  width: 91.3333333333%; }
+  width: 87.6666666667%; }
 
 .col-12-sm {
-  width: 100%; }
+  width: 96%; }
 
 @media only screen and (min-width: 45em) {
   .col-1 {
-    width: 4.6666666667%; }
+    width: 4.3333333333%; }
 
   .col-2 {
-    width: 13.3333333333%; }
+    width: 12.6666666667%; }
 
   .col-3 {
-    width: 22%; }
+    width: 21%; }
 
   .col-4 {
-    width: 30.6666666667%; }
+    width: 29.3333333333%; }
 
   .col-5 {
-    width: 39.3333333333%; }
+    width: 37.6666666667%; }
 
   .col-6 {
-    width: 48%; }
+    width: 46%; }
 
   .col-7 {
-    width: 56.6666666667%; }
+    width: 54.3333333333%; }
 
   .col-8 {
-    width: 65.3333333333%; }
+    width: 62.6666666667%; }
 
   .col-9 {
-    width: 74%; }
+    width: 71%; }
 
   .col-10 {
-    width: 82.6666666667%; }
+    width: 79.3333333333%; }
 
   .col-11 {
-    width: 91.3333333333%; }
+    width: 87.6666666667%; }
 
   .col-12 {
-    width: 100%; }
+    width: 96%; }
 
   .hidden-sm {
     display: block; } }
