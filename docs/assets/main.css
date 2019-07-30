@@ -819,6 +819,13 @@ a.btn {
 .trusted-by {
   margin-top: 30px; }
 
+.news-section {
+  color: #424242;
+  min-height: 500px; }
+  .news-section .medium-widget-article__item {
+    background-color: white;
+    border: 1px solid white; }
+
 .medium-widget-article__item {
   transition: box-shadow 0.3s linear;
   margin: 20px;

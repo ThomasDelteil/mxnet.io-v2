@@ -33,7 +33,7 @@
                 </div>
                 <div class="col-4">
                     <div>
-                        <a href="/features" class="btn btn-action">See all Features <span class="span-accented">›</span></a>
+                        <a href="/features" class="btn btn-action">All Features <span class="span-accented">›</span></a>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="col-4">
                     <div>
-                        <a href="/ecosystem" class="btn btn-action">See all Projects <span
+                        <a href="{{'/ecosystem' | relative_url}}" class="btn btn-action">All Projects <span
                                 class="span-accented">›</span></a>
                     </div>
                 </div>
@@ -122,7 +122,33 @@
                 </div>
                 {%- endfor -%}
             </div>
+        </div>
+    </div>
+    <div class="news-section section ">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-8">
+                    <h2>Latest News</h2>
+                </div>
+                <div class="col-4">
+                    <div class="header-section">
+                        <a href="{{'/blog' | relative_url}}" class="btn btn-action">More Blog Posts <span
+                                class="span-accented">›</span></a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <p>Follow our blog post publications to get the latest news on MXNet and its ecosystem</p>
+                </div>
+            </div>
 
+            <div id="medium-widget"></div>
+            <script>
+                MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/apache-mxnet","postsPerLine":3,"limit":3,"picture":"big","fields":["description","claps","publishAt"],"ratio":"landscape"}})
+            </script>
+        </div>
+    </div>
+    <div class="community-section section ">
+        <div class="wrapper">
             <div class="trusted-by">
                 <h2>Already trusted by</h2>
                 <img src="{{"/assets/img/logos.png" | relative_url}}">

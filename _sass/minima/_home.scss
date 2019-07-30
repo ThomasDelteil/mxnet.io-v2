@@ -155,3 +155,15 @@ a.btn {
 .trusted-by {
   margin-top: 30px;
 }
+
+// ===
+// news
+// ===
+.news-section {
+  color: $grey-color-dark;
+  min-height: 500px;
+  .medium-widget-article__item {
+    background-color: white;
+    border: 1px solid white;
+  }
+}
