@@ -439,6 +439,7 @@ table {
         padding-bottom: 5px; }
       .site-nav .page-link {
         padding: 5px 10px;
+        display: block;
         margin-left: 20px; }
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } }
