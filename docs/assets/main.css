@@ -812,11 +812,15 @@ a.btn {
   color: black; }
 
 .community-section {
-  background-color: white;
+  background-color: whitesmoke;
   color: #424242; }
 
 .community-section .card {
-  background-color: whitesmoke; }
+  background-color: white; }
+
+.trusted-by-section {
+  background-color: white;
+  color: #424242; }
 
 .trusted-by {
   margin-top: 30px; }
@@ -824,10 +828,12 @@ a.btn {
 .news-section {
   color: #424242;
   min-height: 500px;
-  background-color: whitesmoke; }
+  background-color: white; }
   .news-section .medium-widget-article__item {
-    background-color: white;
-    border: 1px solid white; }
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke; }
+  .news-section .btn {
+    background-color: whitesmoke; }
 
 .medium-widget-article__item {
   transition: box-shadow 0.3s linear;

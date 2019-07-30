@@ -146,16 +146,26 @@ a.btn {
 // ===
 
 .community-section {
-  background-color: white;
+  background-color: $grey-color-light;
   color: $grey-color-dark;
 }
 
 .community-section .card {
-  background-color: $grey-color-light
+  background-color: white;
+}
+
+// ===
+// trusted-by
+// ===
+
+.trusted-by-section {
+  background-color: white;
+  color: $grey-color-dark;
 }
 
 .trusted-by {
   margin-top: 30px;
+
 }
 
 // ===
@@ -165,8 +175,12 @@ a.btn {
   color: $grey-color-dark;
   min-height: 500px;
   .medium-widget-article__item {
-    background-color: white;
-    border: 1px solid white;
+    background-color: $grey-color-light;
+    border: 1px solid $grey-color-light;
   }
-  background-color: $grey-color-light;
+  background-color: white;
+
+  .btn {
+    background-color: $grey-color-light;
+  }
 }
