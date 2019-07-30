@@ -5,8 +5,8 @@
     <div class="wrapper">
 
 
-        <div class="footer-col-wrapper">
-            <div class="footer-col footer-col-1">
+        <div class="row">
+            <div class="col-4">
                 <ul class="contact-list">
                     {%- if site.email -%}
                     <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
@@ -14,11 +14,11 @@
                 </ul>
             </div>
 
-            <div class="footer-col footer-col-2">
+            <div class="col-4">
                 {%- include social.html -%}
             </div>
 
-            <div class="footer-col footer-col-3 footer-text">
+            <div class="col-4 footer-text">
                 <p>{{- site.description | escape -}}</p>
             </div>
         </div>

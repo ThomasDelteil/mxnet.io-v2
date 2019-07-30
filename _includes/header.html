@@ -3,7 +3,7 @@
   <script>
          $(document).ready(function(){
             function opacity_header() {
-              var value =  "rgba(4,140,204," +  $(window).scrollTop() / 100 +")"
+              var value =  "rgba(4,140,204," +  ($(window).scrollTop() / 300+0.4) +")"
               console.log(value);
               $('.site-header').css("background-color",value)
             }
