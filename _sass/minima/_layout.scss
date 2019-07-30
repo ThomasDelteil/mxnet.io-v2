@@ -208,17 +208,24 @@
 /**
  * Page content
  */
+
+.header-section {
+  .btn {
+    background-color: $grey-color-light;
+  }
+}
+
 .page-content {
   height: 100%;
   padding: $spacing-unit 0, 0;
   flex: 1;
-  margin-top:40px;
+  margin-top:100px;
 }
 
 .page-content-home {
   height: 100%;
   padding: $spacing-unit 0, 0;
-  margin-top:40px;
+  margin-top:100px;
 }
 
 .page-heading {
@@ -254,7 +261,8 @@
  * Posts
  */
 .post-header {
-  margin-bottom: $spacing-unit;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .post-title {
@@ -268,8 +276,8 @@
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
 
+  background-color: white;
   h2 {
     @include relative-font-size(2);
 
