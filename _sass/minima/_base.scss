@@ -12,7 +12,10 @@ body {
   background-size: contain;
   min-height:100%;
   background-color: $grey-color-light;
-  @include media-query($on-palm) {
+  @media screen and (min-width: $on-palm)  and (max-width: $on-laptop) {
+    background-size: inherit;
+  }
+  @media screen and (max-width: $on-palm) {
     background-size: cover;
   }
 }
