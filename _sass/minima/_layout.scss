@@ -45,7 +45,6 @@
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
-    font-weight:500;
     //text-transform: uppercase;
     //text-shadow: 1px 1px rgba(50,50,50,0.2);
 
@@ -61,7 +60,8 @@
   }
 
   .page-link.page-current {
-    color: $color-mxnet-dark;
+    color: white;
+    text-shadow:0px 0px 1px white;
   }
 
   @media screen and (max-width: $on-laptop) {
