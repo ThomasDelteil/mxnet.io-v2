@@ -408,7 +408,7 @@ table {
       text-shadow: 0px 0px; }
   .site-nav .page-link.page-current {
     color: white;
-    text-shadow: 0px 0px 1px white; }
+    text-shadow: -0.06ex 0 white, 0.06ex 0 white; }
   @media screen and (max-width: 1024px) {
     .site-nav {
       position: absolute;
