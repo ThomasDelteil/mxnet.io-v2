@@ -46,7 +46,8 @@
     color: $text-color;
     line-height: $base-line-height;
     font-weight:300;
-    text-shadow: 1px 1px rgba(50,50,50,0.2);
+    text-transform: uppercase;
+    //text-shadow: 1px 1px rgba(50,50,50,0.2);
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {

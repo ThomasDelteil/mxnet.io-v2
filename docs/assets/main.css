@@ -28,7 +28,7 @@ body {
   display: none; }
 
 .container {
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto; }
   @media only screen and (min-width: 33.75em) {
@@ -45,7 +45,7 @@ body {
 
 .row [class^="col"] {
   float: left;
-  margin: 0.5rem 2%;
+  margin: 0.5rem 1%;
   min-height: 0.125rem; }
 
 .row::after {
@@ -65,80 +65,80 @@ body {
 .col-10,
 .col-11,
 .col-12 {
-  width: 96%; }
+  width: 98%; }
 
 .col-1-sm {
-  width: 4.3333333333%; }
+  width: 6.3333333333%; }
 
 .col-2-sm {
-  width: 12.6666666667%; }
+  width: 14.6666666667%; }
 
 .col-3-sm {
-  width: 21%; }
+  width: 23%; }
 
 .col-4-sm {
-  width: 29.3333333333%; }
+  width: 31.3333333333%; }
 
 .col-5-sm {
-  width: 37.6666666667%; }
+  width: 39.6666666667%; }
 
 .col-6-sm {
-  width: 46%; }
+  width: 48%; }
 
 .col-7-sm {
-  width: 54.3333333333%; }
+  width: 56.3333333333%; }
 
 .col-8-sm {
-  width: 62.6666666667%; }
+  width: 64.6666666667%; }
 
 .col-9-sm {
-  width: 71%; }
+  width: 73%; }
 
 .col-10-sm {
-  width: 79.3333333333%; }
+  width: 81.3333333333%; }
 
 .col-11-sm {
-  width: 87.6666666667%; }
+  width: 89.6666666667%; }
 
 .col-12-sm {
-  width: 96%; }
+  width: 98%; }
 
 @media only screen and (min-width: 45em) {
   .col-1 {
-    width: 4.3333333333%; }
+    width: 6.3333333333%; }
 
   .col-2 {
-    width: 12.6666666667%; }
+    width: 14.6666666667%; }
 
   .col-3 {
-    width: 21%; }
+    width: 23%; }
 
   .col-4 {
-    width: 29.3333333333%; }
+    width: 31.3333333333%; }
 
   .col-5 {
-    width: 37.6666666667%; }
+    width: 39.6666666667%; }
 
   .col-6 {
-    width: 46%; }
+    width: 48%; }
 
   .col-7 {
-    width: 54.3333333333%; }
+    width: 56.3333333333%; }
 
   .col-8 {
-    width: 62.6666666667%; }
+    width: 64.6666666667%; }
 
   .col-9 {
-    width: 71%; }
+    width: 73%; }
 
   .col-10 {
-    width: 79.3333333333%; }
+    width: 81.3333333333%; }
 
   .col-11 {
-    width: 87.6666666667%; }
+    width: 89.6666666667%; }
 
   .col-12 {
-    width: 96%; }
+    width: 98%; }
 
   .hidden-sm {
     display: block; } }
@@ -395,7 +395,7 @@ table {
     color: white;
     line-height: 1.5;
     font-weight: 300;
-    text-shadow: 1px 1px rgba(50, 50, 50, 0.2); }
+    text-transform: uppercase; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 40px; }
     .site-nav .page-link:hover {
@@ -724,6 +724,8 @@ table {
 
 a.btn {
   padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-top: 20px;
   background-color: white;
   transition: box-shadow 0.3s linear, border 0.3s linear;
@@ -747,15 +749,12 @@ a.btn {
   padding: 10px;
   background-color: white;
   transition: box-shadow 0.3s linear;
-  height: 100%;
-  filter: grayscale(1); }
+  height: 100%; }
   .card:hover {
     box-shadow: inset 0 -2px 0 0 #048ccc;
     filter: none; }
-    .card:hover a h3 {
-      color: orangered; }
   .card h3 {
-    color: black; }
+    color: orangered; }
   .card p {
     font-size: 90%; }
   .card a {
@@ -805,6 +804,6 @@ a.btn {
 
 .trusted-by {
   margin-top: 30px;
-  filter: saturate(0.3); }
+  filter: saturate(1); }
   .trusted-by:hover {
     filter: saturate(1); }

@@ -8,6 +8,8 @@
 
 a.btn {
   padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-top: 20px;
   background-color: white;
   transition: box-shadow 0.3s linear, border 0.3s linear;
@@ -44,19 +46,20 @@ a.btn {
   transition: box-shadow 0.3s linear;
   height: 100%;
 
-  filter: grayscale(1);
+
   &:hover {
     box-shadow: inset 0 -2px 0 0 $color-mxnet;
     filter: none;
+  }
 
-    a h3 {
-      color: orangered;
-    }
+  a h3 {
+      //color: orangered;
   }
 
   h3 {
-    color: black;
+    color: orangered;
   }
+
 
   p {
     font-size: 90%;
@@ -146,7 +149,7 @@ a.btn {
 
 .trusted-by {
   margin-top: 30px;
-  filter: saturate(0.3);
+  filter: saturate(1);
   &:hover {
     filter:saturate(1);
   }
