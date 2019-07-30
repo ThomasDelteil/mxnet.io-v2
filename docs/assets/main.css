@@ -262,6 +262,9 @@ a {
     color: #043c6e;
     text-decoration: none; }
 
+.clickable:hover {
+  cursor: pointer; }
+
 /**
  * Blockquotes
  */
@@ -397,8 +400,7 @@ table {
   .site-nav .page-link {
     color: white;
     line-height: 1.5;
-    font-weight: 300;
-    text-transform: uppercase; }
+    font-weight: 500; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 40px; }
     .site-nav .page-link:hover {
@@ -436,7 +438,6 @@ table {
         display: block;
         padding-bottom: 5px; }
       .site-nav .page-link {
-        display: block;
         padding: 5px 10px;
         margin-left: 20px; }
         .site-nav .page-link:not(:last-child) {

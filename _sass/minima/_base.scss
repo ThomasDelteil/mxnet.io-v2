@@ -141,6 +141,11 @@ a {
   }
 }
 
+.clickable {
+  &:hover {
+    cursor: pointer;
+  }
+}
 
 /**
  * Blockquotes
