@@ -567,6 +567,7 @@ table {
       font-size: 38.25px; } }
 
 .post-content {
+  min-height: 1024px;
   background-color: white; }
   .post-content h2 {
     font-size: 34px; }
