@@ -2,6 +2,8 @@
   margin-bottom: 40px;
 }
 
+
+
 .home .btn {
   border: 0;
 }
@@ -13,7 +15,7 @@ a.btn {
   margin-top: 20px;
   background-color: white;
   transition: box-shadow 0.3s linear, border 0.3s linear;
-  border: 1px solid $grey-color-light;
+
   color: $grey-color-dark;
   &:hover {
     box-shadow: inset 0 -2px 0 0 $color-mxnet;
@@ -166,4 +168,5 @@ a.btn {
     background-color: white;
     border: 1px solid white;
   }
+  background-color: $grey-color-light;
 }

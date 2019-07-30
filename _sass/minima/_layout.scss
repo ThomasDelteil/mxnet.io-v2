@@ -60,6 +60,10 @@
     }
   }
 
+  .page-link.page-current {
+    color: $color-mxnet-dark;
+  }
+
   @media screen and (max-width: $on-laptop) {
     position: absolute;
     top: 9px;
@@ -120,10 +124,17 @@
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
-  background-color: $grey-color-light;
+  background-color: #424242;
+  a {
+    color: $color-mxnet !important;
+    &:visited {
+      color: $color-mxnet !important;
+    }
+  }
+
 }
 .site-footer2 {
-  background-color: $color-mxnet;
+  background-color: #424242;
   padding-top:40px;
   padding-bottom:10px;
 }
@@ -164,7 +175,7 @@
 }
 
 .footer-text {
-  color: $grey-color-dark;
+  color: $grey-color-light;
 }
 
 .footer-col-1 {
@@ -261,7 +272,7 @@
  * Posts
  */
 .post-header {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-top: 50px;
 }
 

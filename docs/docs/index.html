@@ -23,6 +23,9 @@
 
   <script>
     $(document).ready(function () {
+
+      // HEADER OPACITY LOGIC
+
       function opacity_header() {
         var value = "rgba(4,140,204," + ($(window).scrollTop() / 300 + 0.4) + ")"
         console.log(value);
@@ -33,6 +36,13 @@
         opacity_header()
       })
       opacity_header();
+
+      // MENU SELECTOR LOGIC
+      $('.page-link').each( function () {
+        if (window.location.href.includes(this.href)) {
+          $(this).addClass("page-current");
+        }
+      });
     })
   </script>
   <div class="wrapper">
@@ -61,12 +71,14 @@
   </div>
 </header>
 <main class="page-content" aria-label="Content">
-        <article class="post">
+        <script>
+
+</script>
+<article class="post">
 
   <header class="post-header wrapper">
     <h1 class="post-title">Docs</h1>
-    <h3></h3>
-  </header>
+    <h3></h3></header>
 
   <div class="post-content">
     <div class="wrapper">
