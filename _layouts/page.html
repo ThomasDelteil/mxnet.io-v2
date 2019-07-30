@@ -11,7 +11,7 @@ layout: default
     <h3>{{page.subtitle}}</h3>
 
     {%- if page.action -%}
-      <a style="float:left; margin-top:20px" href="{{page.action_url}}" class="btn btn-action">{{page.action}} <span class="span-accented">›</span></a>
+      <a style="float:left; margin-top:20px" href="{{page.action_url | relative_url}}" class="btn btn-action">{{page.action}} <span class="span-accented">›</span></a>
     {%- endif -%}
   </header>
 

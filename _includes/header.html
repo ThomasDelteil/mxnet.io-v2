@@ -7,7 +7,6 @@
 
       function opacity_header() {
         var value = "rgba(4,140,204," + ($(window).scrollTop() / 300 + 0.4) + ")"
-        console.log(value);
         $('.site-header').css("background-color", value)
       }
 
@@ -41,10 +40,10 @@
         <a class="page-link" href="{{'/get_started' | relative_url }}">Get Started</a>
         <a class="page-link" href="{{'/blog' | relative_url }}">Blog</a>
         <a class="page-link" href="{{'/features' | relative_url }}">Features</a>
-        <a class="page-link" href="{{'/ecosystem' | relative_url }}">Ecosytem</a>
+        <a class="page-link" href="{{'/ecosystem' | relative_url }}">Ecosystem</a>
         <a class="page-link" href="{{'/docs' | relative_url }}">Docs</a>
         <a class="page-link" href="{{'/tutorials' | relative_url }}">Tutorials</a>
-        <a class="page-link" href="https://github.com/apache/incubator-mxnet">Github</a>
+        <a class="page-link" href="https://github.com/apache/incubator-mxnet">GitHub</a>
       </div>
     </nav>
   </div>

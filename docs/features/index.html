@@ -28,7 +28,6 @@
 
       function opacity_header() {
         var value = "rgba(4,140,204," + ($(window).scrollTop() / 300 + 0.4) + ")"
-        console.log(value);
         $('.site-header').css("background-color", value)
       }
 
@@ -62,10 +61,10 @@
         <a class="page-link" href="/mxnet.io-v2/get_started">Get Started</a>
         <a class="page-link" href="/mxnet.io-v2/blog">Blog</a>
         <a class="page-link" href="/mxnet.io-v2/features">Features</a>
-        <a class="page-link" href="/mxnet.io-v2/ecosystem">Ecosytem</a>
+        <a class="page-link" href="/mxnet.io-v2/ecosystem">Ecosystem</a>
         <a class="page-link" href="/mxnet.io-v2/docs">Docs</a>
         <a class="page-link" href="/mxnet.io-v2/tutorials">Tutorials</a>
-        <a class="page-link" href="https://github.com/apache/incubator-mxnet">Github</a>
+        <a class="page-link" href="https://github.com/apache/incubator-mxnet">GitHub</a>
       </div>
     </nav>
   </div>
@@ -78,21 +77,94 @@
 
   <header class="post-header wrapper">
     <h1 class="post-title">Features</h1>
-    <h3></h3></header>
+    <h3>Whether you are looking for a flexible library to quickly develop cutting-edge deep learning research or a robust framework to push production workload, MXNet caters to all needs.</h3><a style="float:left; margin-top:20px" href="/mxnet.io-v2/get_started" class="btn btn-action">Get Started <span class="span-accented">›</span></a></header>
 
   <div class="post-content">
     <div class="wrapper">
-      <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+      <!-- HYBRID FRONTEND -->
+<div class="row">
+    <div class="col-12">
+        <h3 class="feature-title">Hybrid Front-End</h3>
+    </div>
+    <div class="col-5">
+        <p class="feature-paragraph">The Gluon Python API lets you use MXNet in a fully imperative manner. It also allows you to simply switch to
+            symbolic mode by calling the <a href="https://mxnet.incubator.apache.org/versions/master/tutorials/gluon/hybrid.html">hybridize</a> functionality. The symbolic execution provides faster and more optimized
+            execution as well as the ability to export the network for inference in different language bindings like java or C++.
+        </p>
+    </div>
+    <div class="col-1">
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
+    </div>
+    <div class="col-6 code-block">
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">net</span> <span class="o">=</span> <span class="n">model_zoo</span><span class="o">.</span><span class="n">vision</span><span class="o">.</span><span class="n">resnet50_v2</span><span class="p">(</span><span class="n">pretrained</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">net</span><span class="o">.</span><span class="n">hybridize</span><span class="p">()</span>
 
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+<span class="n">dummy_input</span> <span class="o">=</span> <span class="n">mx</span><span class="o">.</span><span class="n">nd</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">224</span><span class="p">,</span><span class="mi">224</span><span class="p">))</span>
+<span class="n">net</span><span class="p">(</span><span class="n">dummy_input</span><span class="p">)</span>
+
+<span class="n">net</span><span class="o">.</span><span class="n">export</span><span class="p">(</span><span class="s">"symbolic_resnet50"</span><span class="p">)</span></code></pre></figure>
+    </div>
+</div>
+
+<!-- DISTRIBUTED TRAINING -->
+<br>
+<br>
+<div class="row ">
+    <div class="col-7"></div>
+    <div class="col-5">
+        <h3 class="feature-title">Distributed Training</h3>
+    </div>
+
+    <div class="col-6 code-block">
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">horovod.mxnet</span> <span class="k">as</span> <span class="n">hvd</span>
+
+<span class="c1"># Horovod: initialize Horovod
+</span><span class="n">hvd</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+
+<span class="c1"># Horovod: pin a GPU to be used to local rank
+</span><span class="n">context</span> <span class="o">=</span> <span class="n">mx</span><span class="o">.</span><span class="n">gpu</span><span class="p">(</span><span class="n">hvd</span><span class="o">.</span><span class="n">local_rank</span><span class="p">())</span></code></pre></figure>
+    </div>
+
+    <div class="col-1"></div>
+    <div class="col-5">
+        <p class="feature-paragraph">MXNet allows you to make the most out of your hardware, whether it is multi-gpu or
+            multi-host training with near-linear scaling efficiency. MXNet recently introduced support for
+            <a href="https://medium.com/apache-mxnet/distributed-training-using-apache-mxnet-with-horovod-44f98bf0e7b7">Horovod</a>,
+            the distributed learning framework developed by Uber.
+        </p>
+    </div>
+</div>
 
 
+<!-- 8 Language Bindings -->
+<br><br>
+<div class="row">
+    <div class="col-12">
+        <h3 class="feature-title">8 Language Bindings</h3>
+    </div>
+    <div class="col-5">
+        <p class="feature-paragraph">Deep integration into Python and support for Scala, Julia, Clojure, Java, C++, R and Perl.
+            Combined with the hybridization feature, this allows a very smooth transition from Python training to deployment
+            in the language of your choice to shorten the time to production.
+        </p>
+    </div>
+    <div class="col-1">
+
+    </div>
+    <div class="col-6 code-block">
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">org.apache.mxnet.javaapi.*</span><span class="o">;</span>
+<span class="o">...</span>
+<span class="nc">List</span><span class="o">&lt;</span><span class="nc">DataDesc</span><span class="o">&gt;</span> <span class="n">inputDesc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+<span class="nc">Shape</span> <span class="n">inputShape</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Shape</span><span class="o">(</span><span class="k">new</span> <span class="kt">int</span><span class="o">[]{</span><span class="mi">1</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">224</span><span class="o">,</span> <span class="mi">224</span><span class="o">});</span>
+<span class="n">inputDesc</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">DataDesc</span><span class="o">(</span><span class="s">"data"</span><span class="o">,</span> <span class="n">inputShape</span><span class="o">,</span> <span class="nc">DType</span><span class="o">.</span><span class="na">Float32</span><span class="o">(),</span> <span class="s">"NCHW"</span><span class="o">));</span>
+<span class="nc">Predictor</span> <span class="n">predictor</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Predictor</span><span class="o">(</span><span class="n">inst</span><span class="o">.</span><span class="na">modelPathPrefix</span><span class="o">,</span> <span class="n">inputDesc</span><span class="o">,</span> <span class="n">context</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+<span class="o">...</span>
+<span class="kt">float</span><span class="o">[][]</span> <span class="n">result</span> <span class="o">=</span> <span class="n">predictor</span><span class="o">.</span><span class="na">predict</span><span class="o">(</span><span class="k">new</span> <span class="kt">float</span><span class="o">[][]{</span><span class="n">img</span><span class="o">.</span><span class="na">toArray</span><span class="o">()});</span></code></pre></figure>
+    </div>
+</div>
+
+
+</div>
     </div>
   </div>
 
