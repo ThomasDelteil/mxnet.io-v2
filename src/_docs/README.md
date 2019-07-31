@@ -4,7 +4,7 @@ This is for hosting the mxnet.io beta website
 
 build:
 ```
-cd src && JEKYLL_ENV=production bundle exec jekyll build --config _config_prod.yml -d ../docs && cd ..
+JEKYLL_ENV=production bundle exec jekyll build --config _config_prod.yml -d docs
 ```
 
 test:
