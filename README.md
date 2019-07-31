@@ -2,9 +2,15 @@
 
 This is for hosting the mxnet.io beta website
 
-build:
+build for beta github pages:
 ```
-cd src && JEKYLL_ENV=production bundle exec jekyll build --config _config_prod.yml -d ../docs && cd ..
+cd src && JEKYLL_ENV=production bundle exec jekyll build --config _config_beta.yml -d ../docs && cd ..
+```
+
+
+build for release:
+```
+cd src && JEKYLL_ENV=production bundle exec jekyll build --config _config_prod.yml -d ../release && cd ..
 ```
 
 test:
