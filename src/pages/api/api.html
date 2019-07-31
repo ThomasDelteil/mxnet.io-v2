@@ -3,31 +3,31 @@ layout: page
 title: Docs
 subtitle: Documentation for the supported language bindings
 action: Get Started
-action_link: /get_started
-permalink: /docs/
+action_url: /get_started
+permalink: /api/
 
 docs:
 - title: Python API
-  link: /docs/python
+  link: /api/python
   icon: /assets/img/python_logo.svg
 - title: Scala API
-  link: /docs/scala
+  link: /api/scala
   description:
   icon: /assets/img/scala_logo.svg
 - title: Java API
-  link: /docs/java
+  link: /api/java
   description:
   icon: /assets/img/java_logo.svg
 - title: Clojure API
-  link: /docs/clojure
+  link: /api/clojure
   description:
   icon: /assets/img/clojure_logo.svg
 - title: C/C++ API
-  link: /docs/c
+  link: /api/c++
   description:
   icon: /assets/img/cpp_logo.svg
 - title: Julia API
-  link: /docs/julia
+  link: /api/julia
   description:
   icon: /assets/img/julia_logo.svg
 - title: R API
@@ -35,7 +35,7 @@ docs:
   description:
   icon: /assets/img/R_logo.svg
 - title: Perl API
-  link: https://metacpan.org/release/AI-MXNet
+  link: /api/perl
   description:
   icon: /assets/img/perl_logo.svg
 ---
@@ -51,7 +51,7 @@ docs:
 
   </div>
   <div class="col-3">
-    <a href="{{docs.link | relative_url}}" class="btn btn-action docs-action">
+    <a href="{{doc.link | relative_url}}" class="btn btn-action docs-action">
       <img src="{{'assets/img/search.svg' | relative_url}}" class="docs-logo-docs">{{doc.title}} Docs  <span class="span-accented">›</span>
     </a>
   </div>
