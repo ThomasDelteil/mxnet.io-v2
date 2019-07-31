@@ -249,9 +249,10 @@ h1 {
  */
 a {
   color: #048ccc;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: 300; }
   a:visited {
-    color: #043c6e; }
+    color: #048ccc; }
   a:hover {
     color: #043c6e;
     text-decoration: none; }
@@ -765,7 +766,7 @@ a.btn {
   .card:hover {
     box-shadow: inset 0 -2px 0 0 #048ccc;
     filter: none; }
-    .card:hover a h3 {
+    .card:hover a h3, .card:hover h4 {
       color: orangered; }
   .card h3 {
     color: black; }
@@ -872,6 +873,11 @@ a.btn {
 
 figure {
   margin-bottom: 0 !important; }
+
+.ecosystem-page .card {
+  background-color: whitesmoke; }
+.ecosystem-page h4 {
+  float: left; }
 
 .highlight .hll {
   background-color: #ffffcc; }
