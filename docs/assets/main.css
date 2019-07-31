@@ -879,6 +879,22 @@ figure {
 .ecosystem-page h4 {
   float: left; }
 
+.docs-logo {
+  height: 50px; }
+
+.docs-logo-docs {
+  height: 20px;
+  filter: saturate(0.5);
+  padding-bottom: 4px;
+  margin-right: 10px; }
+
+a.btn-action.docs-action {
+  margin-top: 0; }
+
+.docs-action {
+  background-color: whitesmoke !important;
+  float: right; }
+
 .highlight .hll {
   background-color: #ffffcc; }
 
