@@ -1,5 +1,5 @@
 .docs-logo-docs {
-  height: 25px;
+  width: 25px;
   padding-bottom: 4px;
   margin-right: 10px;
 }
@@ -15,10 +15,23 @@
   }
 }
 
+.docs-side-bar {
+  margin-left: 0px !important ;
+}
 .docs-card {
   background-color: whitesmoke;
   padding: 20px;
   height: 100%;
+}
+
+.docs-card.docs-side {
+  padding: 5px;
+  ul {
+    margin-left: 0;
+  }
+  li {
+    margin-left: 20px;
+  }
 }
 
 .docs-action-btn {

@@ -5,39 +5,64 @@ subtitle: Documentation for the supported language bindings
 action: Get Started
 action_url: /get_started
 permalink: /api/
+tag: main_docs
 
 docs:
 - title: Python
-  link: /api/python
+  guide_link: /api/python.html
+  api_link: /api/python/docs/api
+  tutorial_link: /api/python/docs/tutorials
   icon: /assets/img/python_logo.svg
+  tag: python
 - title: Scala
-  link: /api/scala
+  guide_link: /api/scala.html
+  api_link: /api/scala/docs/api
+  tutorial_link: /api/scala/docs/tutorials
   description:
   icon: /assets/img/scala_logo.svg
+  tag: scala
 - title: Java
-  link: /api/java
+  guide_link: /api/java.html
+  api_link: /api/java/docs/api
+  tutorial_link: /api/java/docs/tutorials
   description:
   icon: /assets/img/java_logo.svg
+  tag: java
 - title: Clojure
-  link: /api/clojure
+  guide_link: /api/clojure
+  api_link: /api/clojure/docs/api
+  tutorial_link: /api/clojure/docs/tutorials
   description:
   icon: /assets/img/clojure_logo.svg
+  tag: clojure
 - title: C/C++
-  link: /api/c++
+  guide_link: /api/c++
+  api_link: /api/c++/docs/api
+  tutorial_link: /api/c++/docs/tutorials
   description:
   icon: /assets/img/cpp_logo.svg
+  tag: c++
 - title: Julia
-  link: /api/julia
+  guide_link: /api/julia
+  api_link: /api/julia/docs/api
+  tutorial_link: https://github.com/apache/incubator-mxnet/tree/master/julia/examples
   description:
   icon: /assets/img/julia_logo.svg
+  tag: julia
 - title: R
-  link: /docs/r
+  guide_link: /api/r
+  api_link: /api/r/docs/api
+  tutorial_link: /api/r/docs/tutorials
   description:
   icon: /assets/img/R_logo.svg
+  tag: r
 - title: Perl
-  link: /api/perl
+  guide_link: /api/perl
+  api_link: https://metacpan.org/release/AI-MXNet
+  tutorial_link: /api/perl/docs/tutorials
   description:
   icon: /assets/img/perl_logo.svg
+  tag: perl
 ---
 
 <div class="row">
@@ -48,13 +73,13 @@ docs:
               <img class="docs-logo-image" src="{{doc.icon | relative_url}}">
           </div>
           <div class="docs-action-btn">
-            <a href="{{doc.link | relative_url}}.html"> <img src="{{'assets/img/compass.svg' | relative_url}}" class="docs-logo-docs">{{doc.title}} Guide  <span class="span-accented">›</span></a>
+            <a href="{{doc.guide_link | relative_url}}"> <img src="{{'assets/img/compass.svg' | relative_url}}" class="docs-logo-docs">{{doc.title}} Guide  <span class="span-accented">›</span></a>
           </div>
           <div class="docs-action-btn">
-            <a href="{{doc.link | relative_url}}/docs/tutorials"> <img src="{{'assets/img/api.svg' | relative_url}}" class="docs-logo-docs">{{doc.title}} Tutorials  <span class="span-accented">›</span></a>
+            <a href="{{doc.tutorial_link | relative_url}}"> <img src="{{'assets/img/video-tutorial.svg' | relative_url}}" class="docs-logo-docs">{{doc.title}} Tutorials  <span class="span-accented">›</span></a>
           </div>
           <div class="docs-action-btn">
-            <a href="{{doc.link | relative_url}}/docs/api"> <img src="{{'assets/img/video-tutorial.svg' | relative_url}}" class="docs-logo-docs">{{doc.title}} API Reference  <span class="span-accented">›</span></a>
+            <a href="{{doc.api_link | relative_url}}"> <img src="{{'assets/img/api.svg' | relative_url}}" class="docs-logo-docs">{{doc.title}} API Reference  <span class="span-accented">›</span></a>
           </div>
       </div>
   </div>

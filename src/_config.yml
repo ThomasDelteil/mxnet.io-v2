@@ -22,7 +22,7 @@ github_username:  apache/incubator-mxnet
 youtube_username: apachemxnet
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
