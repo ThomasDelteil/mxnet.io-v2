@@ -61,7 +61,7 @@
 
   .page-link.page-current {
     color: white;
-    text-shadow: -0.03ex -0.03ex white, 0.03ex 0.03ex white;
+    text-decoration: underline;
   }
 
   @media screen and (max-width: $on-laptop) {

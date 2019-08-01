@@ -403,7 +403,7 @@ table {
       text-shadow: -0.06ex 0 white, 0.06ex 0 white; }
   .site-nav .page-link.page-current {
     color: white;
-    text-shadow: -0.03ex -0.03ex white, 0.03ex 0.03ex white; }
+    text-decoration: underline; }
   @media screen and (max-width: 1024px) {
     .site-nav {
       position: absolute;
