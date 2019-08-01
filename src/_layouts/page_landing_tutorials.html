@@ -6,7 +6,7 @@ layout: page_api
   {% for p in site.pages %}
     {% if p.is_tutorial == true %}
         {% if page.tag == p.tag %}
-          <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+          <li><a href="{{ p.url | relative_url}}">{{ p.title }}</a></li>
         {% endif %}  <!-- page-category -->
     {% endif %}   <!-- resource-p -->
   {% endfor %}  <!-- page -->
