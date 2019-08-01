@@ -40,7 +40,7 @@
     font-weight: 300 !important
 }
 
-.mx-card-title:hover {
+.mx-card:hover .mx-card-title {
     color: orangered !important;
 }
 
