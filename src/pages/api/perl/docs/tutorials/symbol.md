@@ -3,6 +3,7 @@ layout: page_api
 title: Symbol API
 is_tutorial: true
 tag: perl
+permalink: /api/perl/docs/tutorials/symbol
 ---
 
 # MXNet Perl Symbolic API

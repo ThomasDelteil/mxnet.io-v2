@@ -3,6 +3,7 @@ layout: page_api
 title: Symbolic API with Pictures
 is_tutorial: true
 tag: clojure
+permalink: /api/clojure/docs/tutorials/symbol_in_pictures
 ---
 
 # Symbolic Configuration and Execution in Pictures

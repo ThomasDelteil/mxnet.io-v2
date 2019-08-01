@@ -3,6 +3,7 @@ layout: page_api
 title: NDArray
 is_tutorial: true
 tag: clojure
+permalink: /api/clojure/docs/tutorials/ndarray
 ---
 
 # NDArray API

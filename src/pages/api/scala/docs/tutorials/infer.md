@@ -5,6 +5,7 @@ action: Get Started
 action_url: /get_started
 is_tutorial: true
 tag: scala
+permalink: /api/scala/docs/tutorials/infer
 ---
 
 # Infer API

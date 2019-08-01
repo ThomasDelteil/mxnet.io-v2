@@ -3,6 +3,7 @@ layout: page_api
 title: Data Loading API
 is_tutorial: true
 tag: perl
+permalink: /api/perl/docs/tutorials/io
 ---
 
 # Data Loading API

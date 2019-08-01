@@ -2,6 +2,7 @@
 layout: page_api
 title: KVStore API
 is_tutorial: true
+permalink: /api/clojure/docs/tutorials/kvstore
 tag: clojure
 ---
 # KVStore API

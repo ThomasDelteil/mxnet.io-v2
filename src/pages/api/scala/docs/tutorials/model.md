@@ -3,7 +3,7 @@ layout: page_api
 title: Model API *Deprecated*
 action: Get Started
 action_url: /get_started
-permalink: /api/scala/docs/tutorials/model_api
+permalink: /api/scala/docs/tutorials/model
 is_tutorial: true
 tag: scala
 ---

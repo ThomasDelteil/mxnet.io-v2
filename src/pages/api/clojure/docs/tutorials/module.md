@@ -3,6 +3,7 @@ layout: page_api
 title: Module API
 is_tutorial: true
 tag: clojure
+permalink: /api/clojure/docs/tutorials/module
 ---
 
 # Module API
