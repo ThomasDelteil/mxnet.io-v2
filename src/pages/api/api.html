@@ -7,58 +7,59 @@ action_url: /get_started
 permalink: /api/
 
 docs:
-- title: Python API
-  link: /api/python
+- title: Python
+  link: /api/python/docs
   icon: /assets/img/python_logo.svg
-- title: Scala API
+- title: Scala
   link: /api/scala
   description:
   icon: /assets/img/scala_logo.svg
-- title: Java API
+- title: Java
   link: /api/java
   description:
   icon: /assets/img/java_logo.svg
-- title: Clojure API
+- title: Clojure
   link: /api/clojure
   description:
   icon: /assets/img/clojure_logo.svg
-- title: C/C++ API
+- title: C/C++
   link: /api/c++
   description:
   icon: /assets/img/cpp_logo.svg
-- title: Julia API
+- title: Julia
   link: /api/julia
   description:
   icon: /assets/img/julia_logo.svg
-- title: R API
+- title: R
   link: /docs/r
   description:
   icon: /assets/img/R_logo.svg
-- title: Perl API
+- title: Perl
   link: /api/perl
   description:
   icon: /assets/img/perl_logo.svg
 ---
 
-
-{%- for doc in page.docs -%}
 <div class="row">
-
-  <div class="col-3" style="display:block;">
-    <img class="docs-logo" src="{{doc.icon | relative_url}}">
+{%- for doc in page.docs -%}
+  <div class="col-4">
+      <div class="docs-card">
+          <div class="docs-logo-container">
+              <img class="docs-logo-image" src="{{doc.icon | relative_url}}">
+          </div>
+          <div class="docs-action-btn">
+            <a href="{{doc.link | relative_url}}"> <img src="{{'assets/img/compass.svg' | relative_url}}" class="docs-logo-docs">{{doc.title}} Guide  <span class="span-accented">›</span></a>
+          </div>
+          <div class="docs-action-btn">
+            <a href="{{doc.link | relative_url}}/docs/tutorials"> <img src="{{'assets/img/api.svg' | relative_url}}" class="docs-logo-docs">{{doc.title}} Tutorials  <span class="span-accented">›</span></a>
+          </div>
+          <div class="docs-action-btn">
+            <a href="{{doc.link | relative_url}}/docs/api"> <img src="{{'assets/img/video-tutorial.svg' | relative_url}}" class="docs-logo-docs">{{doc.title}} API Reference  <span class="span-accented">›</span></a>
+          </div>
+      </div>
   </div>
-  <div class="col-6">
-
-  </div>
-  <div class="col-3">
-    <a href="{{doc.link | relative_url}}" class="btn btn-action docs-action">
-      <img src="{{'assets/img/search.svg' | relative_url}}" class="docs-logo-docs">{{doc.title}} Docs  <span class="span-accented">›</span>
-    </a>
-  </div>
-  <p class="col-12">{{doc.text}}</p>
-
-</div>
 {%- endfor -%}
+</div>
 
 
 
