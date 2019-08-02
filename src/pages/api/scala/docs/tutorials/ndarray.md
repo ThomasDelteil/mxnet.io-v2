@@ -1,8 +1,6 @@
 ---
 layout: page_api
 title: NDArray
-action: Get Started
-action_url: /get_started
 permalink: /api/scala/docs/tutorials/ndarray
 is_tutorial: true
 tag: scala

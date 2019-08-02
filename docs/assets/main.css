@@ -922,6 +922,16 @@ figure {
   .docs-action-btn a:hover {
     color: orangered; }
 
+.docs-faq {
+  background-color: white; }
+
+.docs-architecture {
+  background-color: whitesmoke;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
 .highlight .hll {
   background-color: #ffffcc; }
 

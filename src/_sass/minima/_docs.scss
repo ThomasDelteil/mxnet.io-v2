@@ -34,7 +34,7 @@
 }
 
 .docs-card {
-  background-color: whitesmoke;
+  background-color: $grey-color-light;
   padding: 20px;
   height: 100%;
 }
@@ -60,4 +60,16 @@
     }
 
   }
+}
+
+.docs-faq {
+  background-color: white;
+}
+
+.docs-architecture {
+  background-color: $grey-color-light;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

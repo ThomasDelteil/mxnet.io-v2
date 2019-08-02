@@ -1,8 +1,6 @@
 ---
 layout: page_api
 title: KVStore API
-action: Get Started
-action_url: /get_started
 permalink: /api/scala/docs/tutorials/kvstore
 is_tutorial: true
 tag: scala

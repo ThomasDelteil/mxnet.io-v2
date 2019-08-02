@@ -1,8 +1,6 @@
 ---
 layout: page_api
 title: Data Loading API
-action: Get Started
-action_url: /get_started
 permalink: /api/scala/docs/tutorials/io
 is_tutorial: true
 tag: scala

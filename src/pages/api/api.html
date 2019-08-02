@@ -127,43 +127,50 @@ docs:
   {%- endif -%}
 {%- endfor -%}
 </div>
-<br><br>
-<h2>MXNet Architecture</h2>
-<p>
-Building a high-performance deep learning library
-requires many systems-level design decisions.
-In this design note, we share the rationale
-for the specific choices made when designing _MXNet_.
-We imagine that these insights may be useful
-to both deep learning practitioners
-and builders of other deep learning systems.
-</p>
-<h4>Deep Learning System Design Concepts</h4>
-<p>
-The following pages address general design concepts for deep learning systems.
-Mainly, they focus on the following 3 areas:
-abstraction, optimization, and trade-offs between efficiency and flexibility.
-Additionally, we provide an overview of the complete MXNet system.
-</p>
-<ul>
-{%- for p in site.pages -%}
-  {%- if p.category == 'architecture' -%}
-    <li><a href="{{p.url | relative_url}}">{{p.title}}</a></li>
-  {%- endif -%}
-{%- endfor -%}
-</ul>
-<br>
-<br>
-<h2>FAQ</h2>
-<ul>
-{%- for faq_c in page.faq_categories -%}
-    <h3>{{faq_c}}</h3>
-    {%- for p in site.pages -%}
-        {%- if p.faq_c == faq_c -%}
-          <li><a href="{{p.url | relative_url}}">{{p.question}}</a></li>
-        {%- endif -%}
-    {%- endfor -%}
-    <br>
-{%- endfor -%}
-</ul>
+</div> <!-- closing outer wrapper -->
+<div class="docs-architecture">
+    <div class="wrapper">
+        <h2>MXNet Architecture</h2>
+        <p>
+        Building a high-performance deep learning library
+        requires many systems-level design decisions.
+        In this design note, we share the rationale
+        for the specific choices made when designing _MXNet_.
+        We imagine that these insights may be useful
+        to both deep learning practitioners
+        and builders of other deep learning systems.
+        </p>
+        <h4>Deep Learning System Design Concepts</h4>
+        <p>
+        The following pages address general design concepts for deep learning systems.
+        Mainly, they focus on the following 3 areas:
+        abstraction, optimization, and trade-offs between efficiency and flexibility.
+        Additionally, we provide an overview of the complete MXNet system.
+        </p>
+        <ul>
+        {%- for p in site.pages -%}
+          {%- if p.category == 'architecture' -%}
+            <li><a href="{{p.url | relative_url}}">{{p.title}}</a></li>
+          {%- endif -%}
+        {%- endfor -%}
+        </ul>
+    </div>
+</div>
+<div class="docs-faq">
+    <div class="wrapper">
+        <h2>FAQ</h2>
+        <ul>
+        {%- for faq_c in page.faq_categories -%}
+            <h3>{{faq_c}}</h3>
+            {%- for p in site.pages -%}
+                {%- if p.faq_c == faq_c -%}
+                  <li><a href="{{p.url | relative_url}}">{{p.question}}</a></li>
+                {%- endif -%}
+            {%- endfor -%}
+            <br>
+        {%- endfor -%}
+        </ul>
+    </div>
+</div>
+<div> <!-- reopening to close wrapper -->
 

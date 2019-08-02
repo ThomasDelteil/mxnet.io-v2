@@ -1,8 +1,6 @@
 ---
 layout: page_api
 title: Symbol in Pictures
-action: Get Started
-action_url: /get_started
 permalink: /api/scala/docs/tutorials/symbol_in_pictures
 is_tutorial: true
 tag: scala
