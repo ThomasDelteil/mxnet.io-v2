@@ -528,7 +528,7 @@ To use the MXNet-Java package, you can acquire the Maven package as a dependency
 
 Further information is in the [MXNet-Java Setup Instructions](java_setup).
 
-If you use IntelliJ or a similar IDE, you may want to follow the [MXNet-Java on IntelliJ tutorial](../api/java/docs/mxnet_java_on_intellij) instead.
+If you use IntelliJ or a similar IDE, you may want to follow the [MXNet-Java on IntelliJ tutorial](../api/java/docs/tutorials/mxnet_java_on_intellij) instead.
 <hr>
 
 ## Contributions
