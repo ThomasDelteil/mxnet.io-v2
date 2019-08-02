@@ -275,18 +275,13 @@ For CPU-only package:
 
 #### Building MXNet-R from Source Code(CPU)
 1. Clone the MXNet github repo.
-
 ```sh
 git clone --recursive https://github.com/apache/incubator-mxnet
 ```
-
 The `--recursive` is to clone all the submodules used by MXNet. You will be editing the ```"/mxnet/R-package"``` folder.
-
 2. Download prebuilt GPU-enabled MXNet libraries for Windows from [Windows release](https://github.com/yajiedesign/mxnet/releases). You will need `mxnet_x64_vc14_cpu.7z` and `prebuildbase_win10_x64_vc14.7z` where X stands for your CUDA toolkit version
-
 3. Create a folder called ```R-package/inst/libs/x64```. MXNet supports only 64-bit operating systems, so you need the x64 folder.
-
-4. Copy the following shared libraries (.dll files) into the ```R-package/inst/libs/x64``` folder:
+4. Copy the following shared libraries (.dll files) into the ```R-package/inst/libs/x64``` folder.
 ```
 libgcc_s_seh-1.dll
 libgfortran-3.dll
@@ -301,9 +296,7 @@ vcomp140.dll
 wget.exe
 ```
 These dlls can be found in `prebuildbase_win10_x64_vc14/3rdparty`, `mxnet_x64_vc14_cpu/build`, `mxnet_x64_vc14_cpu/lib`.
-
-5. Copy the header files from `dmlc`, `mxnet`, `mxshadow` and `nnvm` from mxnet_x64_vc14_cpu/include and mxnet_x64_vc14_cpu/nvnm/include into `./R-package/inst/include`. It should look like:
-
+5. Copy the header files from `dmlc`, `mxnet`, `mxshadow` and `nnvm` from `mxnet_x64_vc14_cpu/include and mxnet_x64_vc14_cpu/nvnm/include` into `./R-package/inst/include`. It should look like
 ```
 ./R-package/inst
 └── include
@@ -311,12 +304,12 @@ These dlls can be found in `prebuildbase_win10_x64_vc14/3rdparty`, `mxnet_x64_vc
     ├── mxnet
     ├── mshadow
     └── nnvm
-
 ```
+
 6. Make sure that R executable is added to your ```PATH``` in the environment variables. Running the ```where R``` command at the command prompt should return the location.
 7. Also make sure that Rtools is installed and the executable is added to your ```PATH``` in the environment variables.
 8. Temporary patch - im2rec currently results in crashes during the build. Remove the im2rec.h and im2rec.cc files in R-package/src/ from cloned repository and comment out the two im2rec lines in [R-package/src/mxnet.cc](https://github.com/apache/incubator-mxnet/blob/master/R-package/src/mxnet.cc) as shown below.
-```bat
+```
 #include "./kvstore.h"
 #include "./export.h"
 //#include "./im2rec.h"
@@ -325,15 +318,13 @@ These dlls can be found in `prebuildbase_win10_x64_vc14/3rdparty`, `mxnet_x64_vc
   DataIterCreateFunction::InitRcppModule();
   KVStore::InitRcppModule();
   Exporter::InitRcppModule();
-//  IM2REC::InitRcppModule();
+//IM2REC::InitRcppModule();
 }
-
 ```
 
-9. Now open the Windows CMD with admin rights and change the directory to the `mxnet` folder(cloned repository). Then use the following commands
-to build R package:
+9. Now open the Windows CMD with admin rights and change the directory to the `mxnet` folder(cloned repository). Then use the following commands to build R package:
 
-```bat
+```bash
 echo import(Rcpp) > R-package\NAMESPACE
 echo import(methods) >> R-package\NAMESPACE
 Rscript -e "install.packages('devtools', repos = 'https://cloud.r-project.org')"
@@ -350,7 +341,6 @@ Rscript -e "require(roxygen2); roxygen2::roxygenise('R-package')"
 
 R CMD INSTALL --build --no-multiarch R-package
 ```
-
 
 ### Installing MXNet-R on a Computer with a GPU Processor
 To install MXNet on a computer with a GPU processor, choose from two options:
@@ -389,17 +379,12 @@ Change cu92 to cu80, cu90 or cu91 based on your CUDA toolkit version. Currently,
 #### Building MXNet-R from Source Code(GPU)
 After you have installed above software, continue with the following steps to build MXNet-R:
 1. Clone the MXNet github repo.
-
 ```sh
 git clone --recursive https://github.com/apache/incubator-mxnet
 ```
-
 The `--recursive` is to clone all the submodules used by MXNet. You will be editing the ```"/mxnet/R-package"``` folder.
-
 2. Download prebuilt GPU-enabled MXNet libraries for Windows from https://github.com/yajiedesign/mxnet/releases. You will need `mxnet_x64_vc14_gpu_cuX.7z` and `prebuildbase_win10_x64_vc14.7z` where X stands for your CUDA toolkit version
-
 3. Create a folder called ```R-package/inst/libs/x64```. MXNet supports only 64-bit operating systems, so you need the x64 folder.
-
 4. Copy the following shared libraries (.dll files) into the ```R-package/inst/libs/x64``` folder:
 ```
 libgcc_s_seh-1.dll
@@ -415,9 +400,7 @@ vcomp140.dll
 wget.exe
 ```
 These dlls can be found in `prebuildbase_win10_x64_vc14/3rdparty`, `mxnet_x64_vc14_gpu_cuX/build`, `mxnet_x64_vc14_gpu_cuX/lib`.
-
-5. Copy the header files from `dmlc`, `mxnet`, `mxshadow` and `nnvm` from mxnet_x64_vc14_gpuX/include and mxnet_x64_vc14_gpuX/nvnm/include into `./R-package/inst/include`. It should look like:
-
+5. Copy the header files from `dmlc`, `mxnet`, `mxshadow` and `nnvm` from `mxnet_x64_vc14_gpuX/include` and `mxnet_x64_vc14_gpuX/nvnm/include` into `./R-package/inst/include`. It should look like:
 ```
 ./R-package/inst
 └── include
@@ -425,12 +408,11 @@ These dlls can be found in `prebuildbase_win10_x64_vc14/3rdparty`, `mxnet_x64_vc
     ├── mxnet
     ├── mshadow
     └── nnvm
-
 ```
 6. Make sure that R executable is added to your ```PATH``` in the environment variables. Running the ```where R``` command at the command prompt should return the location.
 7. Also make sure that Rtools is installed and the executable is added to your ```PATH``` in the environment variables.
 8. Temporary patch - im2rec currently results in crashes during the build. Remove the im2rec.h and im2rec.cc files in R-package/src/ from cloned repository and comment out the two im2rec lines in [R-package/src/mxnet.cc](https://github.com/apache/incubator-mxnet/blob/master/R-package/src/mxnet.cc) as shown below.
-```bat
+```bash
 #include "./kvstore.h"
 #include "./export.h"
 //#include "./im2rec.h"
@@ -439,9 +421,8 @@ These dlls can be found in `prebuildbase_win10_x64_vc14/3rdparty`, `mxnet_x64_vc
   DataIterCreateFunction::InitRcppModule();
   KVStore::InitRcppModule();
   Exporter::InitRcppModule();
-//  IM2REC::InitRcppModule();
+//IM2REC::InitRcppModule();
 }
-
 ```
 9. Now open the Windows CMD with admin rights and change the directory to the `mxnet` folder(cloned repository). Then use the following commands
 to build R package:
@@ -476,13 +457,13 @@ export MXNET_HOME=/<path to>/libmxnet
 The path to the existing libmxnet installation should be the root directory of libmxnet. In other words, you should be able to find the ```libmxnet.so``` file at ```$MXNET_HOME/lib```. For example, if the root directory of libmxnet is ```~```, you would run the following command:
 
 ```bash
-	export MXNET_HOME=/~/libmxnet
+export MXNET_HOME=/~/libmxnet
 ```
 
 You might want to add this command to your ```~/.bashrc``` file. If you do, you can install the Julia package in the Julia console using the following command:
 
 ```julia
-	Pkg.add("MXNet")
+Pkg.add("MXNet")
 ```
 
 For more details about installing and using MXNet with Julia, see the [MXNet Julia documentation](/api/julia/site/).

@@ -15,6 +15,12 @@
   visibility: hidden;
 }
 
+.get-started-from-source {
+  background-color: $grey-color-light;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 #lang-demo ul {
   margin-top: 20px;
   margin-bottom: 15px;
@@ -45,7 +51,9 @@
   margin-left: 30px;
 }
 
-/* Drop down */
+/*
+ * Drop down
+ */
 
 .dropbtn {
   background-color: $color-mxnet;
@@ -108,7 +116,9 @@ ul.dropdown-content {
   background-color: $color-mxnet
 }
 
-/* selector */
+/*
+ * selector
+ */
 
 .col-3.install-left {
   margin: auto;
