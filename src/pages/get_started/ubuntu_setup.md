@@ -124,7 +124,7 @@ Or you can go through a manual process described next.
 
 #### Manual MXNet Installation
 
-It is recommended that you review the general [build from source](build_from_source.md) instructions before continuing.
+It is recommended that you review the general [build from source](build_from_source) instructions before continuing.
 
 On Ubuntu versions 16.04 or later, you need the following dependencies:
 
@@ -157,7 +157,7 @@ sudo make install
 
 **Step 2:** Install a Math Library.
 
-Details on the different math libraries are found in the build from source guide's [Math Library Selection](build_from_source.md#math-library-selection) section.
+Details on the different math libraries are found in the build from source guide's [Math Library Selection](build_from_source#math-library-selection) section.
 
 For OpenBLAS use:
 
@@ -165,7 +165,7 @@ For OpenBLAS use:
     sudo apt-get install -y libopenblas-dev
 ```
 
-For other libraries, visit the [Math Library Selection](build_from_source.md#math-library-selection) section.
+For other libraries, visit the [Math Library Selection](build_from_source#math-library-selection) section.
 
 **Step 3:** Install OpenCV.
 
@@ -201,7 +201,7 @@ Build with CMake and ninja, without GPU and without MKL.
     ninja
 ```
 
-If building on CPU and using MKL and MKL-DNN (make sure MKL is installed according to [Math Library Selection](build_from_source.md#math-library-selection) and [MKL-DNN README](https://github.com/apache/incubator-mxnet/blob/master/docs/tutorials/mkldnn/MKLDNN_README.md)):
+If building on CPU and using MKL and MKL-DNN (make sure MKL is installed according to [Math Library Selection](build_from_source#math-library-selection) and [MKL-DNN README](https://github.com/apache/incubator-mxnet/blob/master/docs/tutorials/mkldnn/MKLDNN_README.md)):
 
 ```bash
     rm -rf build
@@ -232,7 +232,7 @@ Cuda 10.1 in Ubuntu 18.04 builds fine but is not currently tested in CI.
     ninja
 ```
 
-*Note* - You can explore and use more compilation options as they are delcared in the top of `CMakeLists.txt` and also review common [usage examples](build_from_source.md#usage-examples).
+*Note* - You can explore and use more compilation options as they are delcared in the top of `CMakeLists.txt` and also review common [usage examples](build_from_source#usage-examples).
 Optionally, you can also use a higher level, scripted version of the above with an editable CMake options file by doing the
 following:
 
@@ -289,7 +289,7 @@ sudo pip install graphviz==0.8.4 \
 
 ### Install the MXNet Package for C++
 
-Refer to the [C++ Package setup guide](c_plus_plus.md).
+Refer to the [C++ Package setup guide](c_plus_plus).
 <hr>
 
 
@@ -466,7 +466,7 @@ $ sudo apt-get install -y libopenblas-dev liblapack-dev
 $ sudo apt-get install -y libopencv-dev
 ```
 
-**Step 4** Download MXNet sources and build MXNet core shared library. You can clone the repository as described in the following code block, or you may try the [download links](download.md) for your desired MXNet version.
+**Step 4** Download MXNet sources and build MXNet core shared library. You can clone the repository as described in the following code block, or you may try the [download links](download) for your desired MXNet version.
 
 ```bash
 $ git clone --recursive https://github.com/apache/incubator-mxnet
@@ -517,29 +517,29 @@ You should see the following output:
 
 To use the MXNet-Scala package, you can acquire the Maven package as a dependency.
 
-Further information is in the [MXNet-Scala Setup Instructions](scala_setup.md).
+Further information is in the [MXNet-Scala Setup Instructions](scala_setup).
 
-If you use IntelliJ or a similar IDE, you may want to follow the [MXNet-Scala on IntelliJ tutorial](../tutorials/scala/mxnet_scala_on_intellij.md) instead.
+If you use IntelliJ or a similar IDE, you may want to follow the [MXNet-Scala on IntelliJ tutorial](../api/scala/docs/tutorials/mxnet_scala_on_intellij) instead.
 <hr>
 
 ### Install the MXNet Package for Java
 
 To use the MXNet-Java package, you can acquire the Maven package as a dependency.
 
-Further information is in the [MXNet-Java Setup Instructions](java_setup.md).
+Further information is in the [MXNet-Java Setup Instructions](java_setup).
 
-If you use IntelliJ or a similar IDE, you may want to follow the [MXNet-Java on IntelliJ tutorial](../tutorials/java/mxnet_java_on_intellij.md) instead.
+If you use IntelliJ or a similar IDE, you may want to follow the [MXNet-Java on IntelliJ tutorial](../api/java/docs/mxnet_java_on_intellij) instead.
 <hr>
 
 ## Contributions
 
-You are more than welcome to contribute easy installation scripts for other operating systems and programming languages. See the [community contributions page](../community/contribute.md) for further information.
+You are more than welcome to contribute easy installation scripts for other operating systems and programming languages. See the [community contributions page](../community/contribute) for further information.
 
 ## Next Steps
 
-* [Tutorials](../tutorials/index.md)
-* [How To](../faq/index.md)
-* [Architecture](../architecture/index.md)
+* [Tutorials](../api/python/docs/tutorials)
+* [How To](../api)
+* [Architecture](../api)
 
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
