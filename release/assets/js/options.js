@@ -37,7 +37,7 @@ $(document).ready(function () {
     }
 
     function is_a_match(elem, text) {
-        console.log(elem.text());
+
         if (label(elem.text()).includes(label(text))) {
             elem.addClass(('active'))
         }
@@ -115,7 +115,8 @@ $(document).ready(function () {
         showContent();
     }
 
-    $('.opt-group').on('click', '.opt', setContent);
     $('.install-widget').css("visibility", "visible");
     $('.install-content').css("visibility", "visible");
+
+    $('.opt-group').on('click', '.opt', setContent);
 });
