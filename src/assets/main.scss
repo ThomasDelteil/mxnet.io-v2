@@ -1,10 +1,8 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-
-
 body {
   background-image: url("{{'/assets/img/mxnet-background-compressed.jpeg' | relative_url}}");
 }
+
 
 @import "minima";

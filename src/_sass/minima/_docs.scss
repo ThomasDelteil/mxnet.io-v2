@@ -16,7 +16,7 @@
 }
 
 .docs-side-bar {
-  margin-left: 0px !important ;
+  margin-left: 0px !important;
   padding-right: 10px;
   background-color: $grey-color-light;
 }
@@ -41,9 +41,11 @@
 
 .docs-card.docs-side {
   padding: 5px;
+
   ul {
     margin-left: 0;
   }
+
   li {
     margin-left: 20px;
   }
@@ -52,9 +54,11 @@
 .docs-action-btn {
   a {
     color: $grey-color-dark;
+
     &:visited {
       color: $color-mxnet-dark;
     }
+
     &:hover {
       color: orangered;
     }

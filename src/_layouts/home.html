@@ -14,16 +14,18 @@
                     style="margin-left:100px"> LIBRARY FOR DEEP LEARNING</span>
             </h1>
 
-            <p style="margin-bottom:40px;">A truly open source deep learning framework suited<br>for flexible research prototyping and
+            <p style="margin-bottom:40px;">A truly open source deep learning framework suited<br>for flexible research
+                prototyping and
                 production.</p>
             <div>
-                <a href="/get-started" class="btn" style="float:left; margin-bottom:20px; margin-top:0px">Get Started <span class="span-accented">›</span></a>
+                <a href="/get-started" class="btn" style="float:left; margin-bottom:20px; margin-top:0px">Get Started
+                    <span class="span-accented">›</span></a>
             </div>
-
-            </div>
-
 
         </div>
+
+
+    </div>
     </div>
     <div class="key-features-section section">
         <div class="wrapper">
@@ -41,17 +43,17 @@
             <div class="row key-features">
                 {{ layout.landing }}
                 {%- for feature in page.key_features -%}
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-text">
-                                <h3>{{feature.title}}</h3>
-                                <p>{{feature.text}}</p>
-                            </div>
-                            <div class="key-feature-image">
-                                    <img width=50px src="{{feature.icon | relative_url}}">
-                            </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-text">
+                            <h3>{{feature.title}}</h3>
+                            <p>{{feature.text}}</p>
+                        </div>
+                        <div class="key-feature-image">
+                            <img width=50px src="{{feature.icon | relative_url}}">
                         </div>
                     </div>
+                </div>
                 {%- endfor -%}
             </div>
 
@@ -113,7 +115,16 @@
 
             <div id="medium-widget"></div>
             <script>
-                MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/apache-mxnet","postsPerLine":3,"limit":3,"picture":"big","fields":["description","claps","publishAt"],"ratio":"landscape"}})
+                MediumWidget.Init({renderTo: '#medium-widget',
+                    params: {
+                        "resource": "https://medium.com/apache-mxnet",
+                        "postsPerLine": 3,
+                        "limit": 3,
+                        "picture": "big",
+                        "fields": ["description", "claps", "publishAt"],
+                        "ratio": "landscape"
+                    }
+                })
             </script>
         </div>
     </div>

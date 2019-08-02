@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang=" en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/mxnet-icon.png" rel="icon" type="image/png"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Resources | Apache MXNet</title>
+<title>C++ Setup | Apache MXNet</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="Resources" />
+<meta property="og:title" content="C++ Setup" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A flexible and efficient library for deep learning." />
 <meta property="og:description" content="A flexible and efficient library for deep learning." />
-<link rel="canonical" href="https://mxnet.incubator.apache.org/Resources/" />
-<meta property="og:url" content="https://mxnet.incubator.apache.org/Resources/" />
+<link rel="canonical" href="https://thomasdelteil.github.io/mxnet.io-v2/get_started/cpp_setup" />
+<meta property="og:url" content="https://thomasdelteil.github.io/mxnet.io-v2/get_started/cpp_setup" />
 <meta property="og:site_name" content="Apache MXNet" />
 <script type="application/ld+json">
-{"url":"https://mxnet.incubator.apache.org/Resources/","headline":"Resources","description":"A flexible and efficient library for deep learning.","@type":"WebPage","@context":"https://schema.org"}</script>
+{"url":"https://thomasdelteil.github.io/mxnet.io-v2/get_started/cpp_setup","headline":"C++ Setup","description":"A flexible and efficient library for deep learning.","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://mxnet.incubator.apache.org/feed.xml" title="Apache MXNet" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="/mxnet.io-v2/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://thomasdelteil.github.io/mxnet.io-v2/feed.xml" title="Apache MXNet" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="/mxnet.io-v2/assets/js/clipboard.js"></script>
+  <script src="/mxnet.io-v2/assets/js/copycode.js"></script>
 </head>
 <body><header class="site-header" role="banner">
 
@@ -45,8 +48,8 @@
     })
   </script>
   <div class="wrapper">
-    <a class="site-title" rel="author" href="/"><img
-            src="/assets/img/mxnet_logo.png" class="site-header-logo"></a>
+    <a class="site-title" rel="author" href="/mxnet.io-v2/"><img
+            src="/mxnet.io-v2/assets/img/mxnet_logo.png" class="site-header-logo"></a>
     <nav class="site-nav">
       <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
       <label for="nav-trigger">
@@ -58,45 +61,67 @@
       </label>
 
       <div class="trigger">
-        <a class="page-link" href="/get_started">Get Started</a>
-        <a class="page-link" href="/blog">Blog</a>
-        <a class="page-link" href="/features">Features</a>
-        <a class="page-link" href="/ecosystem">Ecosystem</a>
-        <a class="page-link" href="/api">Docs & Tutorials</a>
+        <a class="page-link" href="/mxnet.io-v2/get_started">Get Started</a>
+        <a class="page-link" href="/mxnet.io-v2/blog">Blog</a>
+        <a class="page-link" href="/mxnet.io-v2/features">Features</a>
+        <a class="page-link" href="/mxnet.io-v2/ecosystem">Ecosystem</a>
+        <a class="page-link" href="/mxnet.io-v2/api">Docs & Tutorials</a>
         <a class="page-link" href="https://github.com/apache/incubator-mxnet">GitHub</a>
       </div>
     </nav>
   </div>
 </header>
 <main class="page-content" aria-label="Content">
-        <script>
+    <script>
 
 </script>
 <article class="post">
 
-  <header class="post-header wrapper">
-    <h1 class="post-title">Resources</h1>
-    <h3></h3></header>
+    <header class="post-header wrapper">
+        <h1 class="post-title">C++ Setup</h1>
+        <h3></h3><a style="float:left; margin-top:20px" href="/mxnet.io-v2/get_started" class="btn btn-action">Get Started
+            <span class="span-accented">›</span></a></header>
 
-  <div class="post-content">
-    <div class="wrapper">
-      <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+    <div class="post-content">
+        <div class="wrapper">
+            <h2 id="build-the-c-package">Build the C++ package</h2>
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
+<p>The C++ package has the same prerequisites as the MXNet library.</p>
 
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+<p>To enable C++ package, just add <code>USE_CPP_PACKAGE=1</code> in the <a href="build_from_source.md">build from source</a> options when building the MXNet shared library.</p>
 
+<p>For example to build MXNet with GPU support and the C++ package, OpenCV, and OpenBLAS, from the project root you would run:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">cmake <span class="nt">-DUSE_CUDA</span><span class="o">=</span>1 <span class="nt">-DUSE_CUDA_PATH</span><span class="o">=</span>/usr/local/cuda <span class="nt">-DUSE_CUDNN</span><span class="o">=</span>1 <span class="nt">-DUSE_MKLDNN</span><span class="o">=</span>1 <span class="nt">-DUSE_CPP_PACKAGE</span><span class="o">=</span>1 <span class="nt">-GNinja</span> ..
+ninja <span class="nt">-v</span>
+</code></pre></div>
+<p>You may also want to add the MXNet shared library to your <code>LD_LIBRARY_PATH</code>:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>~/incubator-mxnet/lib
+</code></pre></div>
+<p>Setting the <code>LD_LIBRARY_PATH</code> is required to run the examples mentioned in the following section.</p>
+
+<h2 id="c-example-code">C++ Example Code</h2>
+
+<p>You can find C++ code examples in the <code>cpp-package/example</code> folder of the MXNet project. Refer to the <a href="https://github.com/apache/incubator-mxnet/tree/master/cpp-package">cpp-package&#39;s README</a> for instructions on building the examples.</p>
+
+<h2 id="tutorials">Tutorials</h2>
+
+<ul>
+<li><a href="../tutorials/c++/basics.md">MXNet C++ API Basics</a></li>
+</ul>
+
+<h2 id="related-topics">Related Topics</h2>
+
+<ul>
+<li><a href="https://github.com/apache/incubator-mxnet/tree/master/example/image-classification/predict-cpp">Image Classification using MXNet&#39;s C Predict API</a></li>
+</ul>
+
+        </div>
     </div>
-  </div>
 
 </article>
 
-    </main><footer class="site-footer h-card">
-    <data class="u-url" href="/%0A%20%20%20%20/"></data>
+</main><footer class="site-footer h-card">
+    <data class="u-url" href="/mxnet.io-v2/%0A%20%20%20%20/"></data>
 
     <div class="wrapper">
 
@@ -115,7 +140,7 @@
                 </ul>
             </div>
 
-            <div class="col-4"><ul class="social-media-list"><li><a href="https://github.com/apache/incubator-mxnet"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">apache/incubator-mxnet</span></a></li><li><a href="https://www.twitter.com/apachemxnet"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">apachemxnet</span></a></li><li><a href="https://youtube.com/apachemxnet"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#youtube"></use></svg> <span class="username">apachemxnet</span></a></li></ul>
+            <div class="col-4"><ul class="social-media-list"><li><a href="https://github.com/apache/incubator-mxnet"><svg class="svg-icon"><use xlink:href="/mxnet.io-v2/assets/minima-social-icons.svg#github"></use></svg> <span class="username">apache/incubator-mxnet</span></a></li><li><a href="https://www.twitter.com/apachemxnet"><svg class="svg-icon"><use xlink:href="/mxnet.io-v2/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">apachemxnet</span></a></li><li><a href="https://youtube.com/apachemxnet"><svg class="svg-icon"><use xlink:href="/mxnet.io-v2/assets/minima-social-icons.svg#youtube"></use></svg> <span class="username">apachemxnet</span></a></li></ul>
 </div>
 
             <div class="col-4 footer-text">
@@ -128,7 +153,7 @@
     <div class="wrapper">
         <div class="row">
             <div class="col-3">
-                <img src="/assets/img/apache_incubator_logo.png" class="footer-logo col-2">
+                <img src="/mxnet.io-v2/assets/img/apache_incubator_logo.png" class="footer-logo col-2">
             </div>
             <div class="footer-bottom-warning col-9">
                 <p>Apache MXNet is an effort undergoing incubation at The Apache Software Foundation (ASF), <span
