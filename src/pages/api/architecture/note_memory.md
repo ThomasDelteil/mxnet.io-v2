@@ -272,7 +272,7 @@ This means to execute in a way that takes implicit dependency
 memory sharing into consideration.
 You can do this by adding the implicit dependency edge to the execution graph.
 Or, even simpler, if the execution engine is mutation aware,
-as described in [our discussion of dependency engine design](http://mxnet.io/architecture/note_engine.html),
+as described in [our discussion of dependency engine design](note_engine),
 push the operation in sequence
 and write to the same variable tag
 that represents the same memory region.

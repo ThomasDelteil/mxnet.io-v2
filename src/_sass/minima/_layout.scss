@@ -126,12 +126,14 @@
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
   background-color: #424242;
-
+  .footer-category-title {
+    color: $color-mxnet;
+  }
   a {
-    color: $color-mxnet !important;
+    color: $grey-color-light !important;
 
     &:visited {
-      color: $color-mxnet !important;
+      color: $grey-color-light !important;
     }
   }
 

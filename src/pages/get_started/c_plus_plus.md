@@ -32,7 +32,7 @@ You can find C++ code examples in the `cpp-package/example` folder of the MXNet 
 
 ## Tutorials
 
-* [MXNet C++ API Basics](../tutorials/c++/basics.md)
+* [MXNet C++ API Basics](../api/cpp/docs/tutorials/basics)
 
 ## Related Topics
 
