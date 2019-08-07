@@ -46,4 +46,3 @@ Symbol Package
 
    mxnet.symbol.Symbol
 
-.. disqus::

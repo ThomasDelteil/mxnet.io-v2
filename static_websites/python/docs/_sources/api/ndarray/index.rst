@@ -83,5 +83,3 @@ Sparse NDArray API of MXNet
    mxnet.ndarray.sparse.CSRNDArray
    mxnet.ndarray.sparse.RowSparseNDArray
    sparse_routines
-
-.. disqus::

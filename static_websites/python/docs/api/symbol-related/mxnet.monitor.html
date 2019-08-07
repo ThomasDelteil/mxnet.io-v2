@@ -22,22 +22,44 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <script type="text/javascript" src="../../_static/language_data.js"></script>
     <script type="text/javascript" src="../../_static/google_analytics.js"></script>
-    <script type="text/javascript" src="../../_static/style.css"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    <script type="text/javascript" src="../../_static/disqus.js"></script>
     <link rel="shortcut icon" href="../../_static/mxnet-icon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="mxnet.monitor.Monitor" href="_autogen/mxnet.monitor.Monitor.html" />
     <link rel="prev" title="mxnet.module.SequentialModule" href="_autogen/mxnet.module.SequentialModule.html" /> 
   </head>
-<body>
+<body><header class="site-header" role="banner">
+  <div class="wrapper">
+      <a class="site-title" rel="author" href="/"><img
+            src="../../_static/mxnet_logo.png" class="site-header-logo"></a>
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+      <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+      </label>
+
+      <div class="trigger">
+        <a class="page-link" href="/get_started">Get Started</a>
+        <a class="page-link" href="/blog">Blog</a>
+        <a class="page-link" href="/features">Features</a>
+        <a class="page-link" href="/ecosystem">Ecosystem</a>
+        <a class="page-link page-current" href="/api">Docs & Tutorials</a>
+        <a class="page-link" href="https://github.com/apache/incubator-mxnet">GitHub</a>
+      </div>
+    </nav>
+  </div>
+</header>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer"><header class="mdl-layout__header mdl-layout__header--waterfall ">
     <div class="mdl-layout__header-row">
         
         <nav class="mdl-navigation breadcrumb">
-            <a class="mdl-navigation__link" href="../index.html">API</a><i class="material-icons">navigate_next</i>
+            <a class="mdl-navigation__link" href="../index.html">Python API</a><i class="material-icons">navigate_next</i>
             <a class="mdl-navigation__link" href="index.html">Symbol related modules</a><i class="material-icons">navigate_next</i>
             <a class="mdl-navigation__link is-active">mxnet.monitor</a>
         </nav>
@@ -75,15 +97,7 @@ Show Source
       <nav class="mdl-navigation">
       </nav>
     </div>
-</header><header class="mdl-layout__drawer">
-    
-          <!-- Title -->
-      <span class="mdl-layout-title">
-          <a class="title" href="../../index.html">
-              <img class="logo" src="../../_static/mxnet_logo.png" alt="Apache MXNet"/>
-          </a>
-      </span>
-    
+</header><header class="mdl-layout__drawer">      
     
       <div class="globaltoc">
         <span class="mdl-layout-title toc">Table Of Contents</span>
@@ -92,7 +106,7 @@ Show Source
             
             <nav class="mdl-navigation">
                 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Python Tutorials</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/getting-started/index.html">Getting Started</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorials/getting-started/crash-course/index.html">Crash Course</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../tutorials/getting-started/crash-course/1-ndarray.html">Manipulate data with <code class="docutils literal notranslate"><span class="pre">ndarray</span></code></a></li>
@@ -179,7 +193,7 @@ Show Source
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">API</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Python API</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../ndarray/index.html">mxnet.ndarray</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../ndarray/mxnet.ndarray.NDArray.html">NDArray</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../ndarray/_autogen/mxnet.ndarray.NDArray.context.html">mxnet.ndarray.NDArray.context</a></li>
@@ -1338,15 +1352,7 @@ Show Source
         <main class="mdl-layout__content" tabIndex="0">
 
 	<script type="text/javascript" src="../../_static/sphinx_materialdesign_theme.js "></script>
-    <header class="mdl-layout__drawer">
-    
-          <!-- Title -->
-      <span class="mdl-layout-title">
-          <a class="title" href="../../index.html">
-              <img class="logo" src="../../_static/mxnet_logo.png" alt="Apache MXNet"/>
-          </a>
-      </span>
-    
+    <header class="mdl-layout__drawer">      
     
       <div class="globaltoc">
         <span class="mdl-layout-title toc">Table Of Contents</span>
@@ -1355,7 +1361,7 @@ Show Source
             
             <nav class="mdl-navigation">
                 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Python Tutorials</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/getting-started/index.html">Getting Started</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorials/getting-started/crash-course/index.html">Crash Course</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../tutorials/getting-started/crash-course/1-ndarray.html">Manipulate data with <code class="docutils literal notranslate"><span class="pre">ndarray</span></code></a></li>
@@ -1442,7 +1448,7 @@ Show Source
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">API</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Python API</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../ndarray/index.html">mxnet.ndarray</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../ndarray/mxnet.ndarray.NDArray.html">NDArray</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../ndarray/_autogen/mxnet.ndarray.NDArray.context.html">mxnet.ndarray.NDArray.context</a></li>
@@ -2617,14 +2623,14 @@ Show Source
 </tr>
 </tbody>
 </table>
-<div data-disqus-identifier="mxnet.monitor" data-disqus-shortname="mxnet" id="disqus_thread"></div></div>
+</div>
 
 
         </div>
         <div class="side-doc-outline">
             <div class="side-doc-outline--content"> 
             </div>
-        </div>
+        </div>                    
 
       <div class="clearer"></div>
     </div><div class="pagenation">
@@ -2643,19 +2649,52 @@ Show Source
         </div>
      </a>
   </div>
-        <footer class="mdl-mini-footer">
-    <div class="mdl-mini-footer__left-section">
-      <div class="mdl-logo">Apache MXNet</div>
-      <div>
-        
-        
-      </div>
-    </div>
+            <footer class="site-footer h-card">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-4">
+                <h4 class="footer-category-title">Resources</h4>
+                <ul class="contact-list">
+                    <li><a class="u-email" href="mailto:dev@mxnet.apache.org">Dev list</a></li>
+                    <li><a class="u-email" href="mailto:user@mxnet.apache.org">User mailing list</a></li>
+                    <li><a href="https://cwiki.apache.org/confluence/display/MXNET/Apache+MXNet+Home">Developer Wiki</a></li>
+                    <li><a href="https://issues.apache.org/jira/projects/MXNET/issues">Jira Tracker</a></li>
+                    <li><a href="https://github.com/apache/incubator-mxnet/labels/Roadmap">Github Roadmap</a></li>
+                    <li><a href="https://discuss.mxnet.io">MXNet Discuss forum</a></li>
+                    <li><a href="/mxnet.io-v2/community/contribute">Contribute To MXNet</a></li>
 
-    <div class="mdl-mini-footer__right-section">
+                </ul>
+            </div>
+
+            <div class="col-4"><ul class="social-media-list"><li><a href="https://github.com/apache/incubator-mxnet"><svg class="svg-icon"><use xlink:href="../../_static/minima-social-icons.svg#github"></use></svg> <span class="username">apache/incubator-mxnet</span></a></li><li><a href="https://www.twitter.com/apachemxnet"><svg class="svg-icon"><use xlink:href="../../_static/minima-social-icons.svg#twitter"></use></svg> <span class="username">apachemxnet</span></a></li><li><a href="https://youtube.com/apachemxnet"><svg class="svg-icon"><use xlink:href="../../_static/minima-social-icons.svg#youtube"></use></svg> <span class="username">apachemxnet</span></a></li></ul>
+</div>
+
+            <div class="col-4 footer-text">
+                <p>A flexible and efficient library for deep learning.</p>
+            </div>
+        </div>
     </div>
 </footer>
-        </main>
+
+<footer class="site-footer2">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-3">
+                <img src="../../_static/apache_incubator_logo.png" class="footer-logo col-2">
+            </div>
+            <div class="footer-bottom-warning col-9">
+                <p>Apache MXNet is an effort undergoing incubation at The Apache Software Foundation (ASF), <span style="font-weight:bold">sponsored by the <i>Apache Incubator</i></span>. Incubation is required
+                    of all newly accepted projects until a further review indicates that the infrastructure,
+                    communications, and decision making process have stabilized in a manner consistent with other
+                    successful ASF projects. While incubation status is not necessarily a reflection of the completeness
+                    or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.
+                </p><p>"Copyright © 2017-2018, The Apache Software Foundation Apache MXNet, MXNet, Apache, the Apache
+                    feather, and the Apache MXNet project logo are either registered trademarks or trademarks of the
+                    Apache Software Foundation."</p>
+            </div>
+        </div>
     </div>
+</footer>
+        
   </body>
 </html>

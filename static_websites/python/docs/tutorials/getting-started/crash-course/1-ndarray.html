@@ -22,7 +22,6 @@
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
     <script type="text/javascript" src="../../../_static/language_data.js"></script>
     <script type="text/javascript" src="../../../_static/google_analytics.js"></script>
-    <script type="text/javascript" src="../../../_static/style.css"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
     <link rel="shortcut icon" href="../../../_static/mxnet-icon.png"/>
@@ -31,12 +30,36 @@
     <link rel="next" title="Create a neural network" href="2-nn.html" />
     <link rel="prev" title="Crash Course" href="index.html" /> 
   </head>
-<body>
+<body><header class="site-header" role="banner">
+  <div class="wrapper">
+      <a class="site-title" rel="author" href="/"><img
+            src="../../../_static/mxnet_logo.png" class="site-header-logo"></a>
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+      <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+      </label>
+
+      <div class="trigger">
+        <a class="page-link" href="/get_started">Get Started</a>
+        <a class="page-link" href="/blog">Blog</a>
+        <a class="page-link" href="/features">Features</a>
+        <a class="page-link" href="/ecosystem">Ecosystem</a>
+        <a class="page-link page-current" href="/api">Docs & Tutorials</a>
+        <a class="page-link" href="https://github.com/apache/incubator-mxnet">GitHub</a>
+      </div>
+    </nav>
+  </div>
+</header>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer"><header class="mdl-layout__header mdl-layout__header--waterfall ">
     <div class="mdl-layout__header-row">
         
         <nav class="mdl-navigation breadcrumb">
-            <a class="mdl-navigation__link" href="../../index.html">Tutorials</a><i class="material-icons">navigate_next</i>
+            <a class="mdl-navigation__link" href="../../index.html">Python Tutorials</a><i class="material-icons">navigate_next</i>
             <a class="mdl-navigation__link" href="../index.html">Getting Started</a><i class="material-icons">navigate_next</i>
             <a class="mdl-navigation__link" href="index.html">Crash Course</a><i class="material-icons">navigate_next</i>
             <a class="mdl-navigation__link is-active">Manipulate data with <code class="docutils literal notranslate"><span class="pre">ndarray</span></code></a>
@@ -75,15 +98,7 @@ Show Source
       <nav class="mdl-navigation">
       </nav>
     </div>
-</header><header class="mdl-layout__drawer">
-    
-          <!-- Title -->
-      <span class="mdl-layout-title">
-          <a class="title" href="../../../index.html">
-              <img class="logo" src="../../../_static/mxnet_logo.png" alt="Apache MXNet"/>
-          </a>
-      </span>
-    
+</header><header class="mdl-layout__drawer">      
     
       <div class="globaltoc">
         <span class="mdl-layout-title toc">Table Of Contents</span>
@@ -92,7 +107,7 @@ Show Source
             
             <nav class="mdl-navigation">
                 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Tutorials</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Python Tutorials</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Getting Started</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Crash Course</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Manipulate data with <code class="docutils literal notranslate"><span class="pre">ndarray</span></code></a></li>
@@ -179,7 +194,7 @@ Show Source
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../api/index.html">API</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../api/index.html">Python API</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/ndarray/index.html">mxnet.ndarray</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../api/ndarray/mxnet.ndarray.NDArray.html">NDArray</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../../api/ndarray/_autogen/mxnet.ndarray.NDArray.context.html">mxnet.ndarray.NDArray.context</a></li>
@@ -1338,15 +1353,7 @@ Show Source
         <main class="mdl-layout__content" tabIndex="0">
 
 	<script type="text/javascript" src="../../../_static/sphinx_materialdesign_theme.js "></script>
-    <header class="mdl-layout__drawer">
-    
-          <!-- Title -->
-      <span class="mdl-layout-title">
-          <a class="title" href="../../../index.html">
-              <img class="logo" src="../../../_static/mxnet_logo.png" alt="Apache MXNet"/>
-          </a>
-      </span>
-    
+    <header class="mdl-layout__drawer">      
     
       <div class="globaltoc">
         <span class="mdl-layout-title toc">Table Of Contents</span>
@@ -1355,7 +1362,7 @@ Show Source
             
             <nav class="mdl-navigation">
                 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Tutorials</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Python Tutorials</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Getting Started</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="index.html">Crash Course</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Manipulate data with <code class="docutils literal notranslate"><span class="pre">ndarray</span></code></a></li>
@@ -1442,7 +1449,7 @@ Show Source
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../api/index.html">API</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../api/index.html">Python API</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/ndarray/index.html">mxnet.ndarray</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../api/ndarray/mxnet.ndarray.NDArray.html">NDArray</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../../api/ndarray/_autogen/mxnet.ndarray.NDArray.context.html">mxnet.ndarray.NDArray.context</a></li>
@@ -2822,7 +2829,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <p>Next, let’s see how to create a 2D array (also called a matrix) with values from two sets of numbers: 1, 2, 3 and 4, 5, 6. This might also be referred to as a tuple of a tuple of integers.</p>
-<div class="nbinput docutils container">
+<div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
@@ -2831,20 +2838,8 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
-</pre></div>
-</div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-
-<span></span>[[1. 2. 3.]
- [5. 6. 7.]]
-&lt;NDArray 2x3 @cpu(0)&gt;
-</pre></div>
-</div>
-</div>
 <p>We can also create a very simple matrix with the same shape (2 rows by 3 columns), but fill it with 1s.</p>
-<div class="nbinput docutils container">
+<div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
@@ -2854,21 +2849,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
-</pre></div>
-</div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-
-<span></span>[[1. 1. 1.]
- [1. 1. 1.]]
-&lt;NDArray 2x3 @cpu(0)&gt;
-</pre></div>
-</div>
-</div>
 <p>Often we’ll want to create arrays whose values are sampled randomly. For example, sampling values uniformly between -1 and 1. Here we create the same shape, but with random sampling.</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -2877,21 +2860,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
-</pre></div>
-</div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-
-<span></span>[[0.09762704 0.18568921 0.43037868]
- [0.6885315  0.20552671 0.71589124]]
-&lt;NDArray 2x3 @cpu(0)&gt;
-</pre></div>
-</div>
-</div>
 <p>You can also fill an array of a given shape with a given value, such as <code class="docutils literal notranslate"><span class="pre">2.0</span></code>.</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -2900,21 +2871,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
-</pre></div>
-</div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-
-<span></span>[[2. 2. 2.]
- [2. 2. 2.]]
-&lt;NDArray 2x3 @cpu(0)&gt;
-</pre></div>
-</div>
-</div>
 <p>As with NumPy, the dimensions of each NDArray are accessible by accessing the <code class="docutils literal notranslate"><span class="pre">.shape</span></code> attribute. We can also query its <code class="docutils literal notranslate"><span class="pre">size</span></code>, which is equal to the product of the components of the shape. In addition, <code class="docutils literal notranslate"><span class="pre">.dtype</span></code> tells the data type of the stored values.</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -2922,21 +2881,12 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
-</pre></div>
-</div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>((2, 3), 6, numpy.float32)
-</pre></div>
-</div>
-</div>
 </div>
 <div class="section" id="Operations">
 <h2>Operations<a class="headerlink" href="#Operations" title="Permalink to this headline">¶</a></h2>
 <p>NDArray supports a large number of standard mathematical operations. Such as element-wise multiplication:</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -2944,21 +2894,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
-</pre></div>
-</div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-
-<span></span>[[0.19525409 0.37137842 0.86075735]
- [1.377063   0.41105342 1.4317825 ]]
-&lt;NDArray 2x3 @cpu(0)&gt;
-</pre></div>
-</div>
-</div>
 <p>Exponentiation:</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -2966,21 +2904,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
-</pre></div>
-</div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-
-<span></span>[[1.1025515 1.204048  1.5378398]
- [1.9907899 1.2281718 2.0460093]]
-&lt;NDArray 2x3 @cpu(0)&gt;
-</pre></div>
-</div>
-</div>
 <p>And grab a matrix’s transpose to compute a proper matrix-matrix product:</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -2988,24 +2914,12 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
-</pre></div>
-</div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-
-<span></span>[[1.4273899 3.219899 ]
- [1.4273899 3.219899 ]]
-&lt;NDArray 2x2 @cpu(0)&gt;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="section" id="Indexing">
 <h2>Indexing<a class="headerlink" href="#Indexing" title="Permalink to this headline">¶</a></h2>
 <p>MXNet NDArrays support slicing in all the ridiculous ways you might imagine accessing your data. Here’s an example of reading a particular element, which returns a 1D array with shape <code class="docutils literal notranslate"><span class="pre">(1,)</span></code>.</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -3013,20 +2927,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
-</pre></div>
-</div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-
-<span></span>[0.71589124]
-&lt;NDArray 1 @cpu(0)&gt;
-</pre></div>
-</div>
-</div>
 <p>Read the second and third columns from <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -3034,21 +2937,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
-</pre></div>
-</div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-
-<span></span>[[0.18568921 0.43037868]
- [0.20552671 0.71589124]]
-&lt;NDArray 2x2 @cpu(0)&gt;
-</pre></div>
-</div>
-</div>
 <p>and writing to a specific element</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -3057,21 +2948,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
-</pre></div>
-</div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-
-<span></span>[[0.09762704 2.         2.        ]
- [0.6885315  2.         2.        ]]
-&lt;NDArray 2x3 @cpu(0)&gt;
-</pre></div>
-</div>
-</div>
 <p>Multi-dimensional slicing is also supported.</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -3080,24 +2959,12 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
-</pre></div>
-</div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-
-<span></span>[[0.09762704 2.         2.        ]
- [4.         4.         2.        ]]
-&lt;NDArray 2x3 @cpu(0)&gt;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="section" id="Converting-between-MXNet-NDArray-and-NumPy">
 <h2>Converting between MXNet NDArray and NumPy<a class="headerlink" href="#Converting-between-MXNet-NDArray-and-NumPy" title="Permalink to this headline">¶</a></h2>
 <p>Converting MXNet NDArrays to and from NumPy is easy. The converted arrays do not share memory.</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -3106,34 +2973,12 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
-</pre></div>
-</div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-<span></span>(numpy.ndarray, array([[2., 2., 2.],
-        [2., 2., 2.]], dtype=float32))
-</pre></div>
-</div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
 <span></span><span class="n">nd</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
-</pre></div>
-</div>
-<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
-
-<span></span>[[2. 2. 2.]
- [2. 2. 2.]]
-&lt;NDArray 2x3 @cpu(0)&gt;
 </pre></div>
 </div>
 </div>
@@ -3160,7 +3005,7 @@ div.rendered_html tbody tr:hover {
 
 </div>
             </div>
-        </div>
+        </div>                    
 
       <div class="clearer"></div>
     </div><div class="pagenation">
@@ -3179,19 +3024,52 @@ div.rendered_html tbody tr:hover {
         </div>
      </a>
   </div>
-        <footer class="mdl-mini-footer">
-    <div class="mdl-mini-footer__left-section">
-      <div class="mdl-logo">Apache MXNet</div>
-      <div>
-        
-        
-      </div>
-    </div>
+            <footer class="site-footer h-card">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-4">
+                <h4 class="footer-category-title">Resources</h4>
+                <ul class="contact-list">
+                    <li><a class="u-email" href="mailto:dev@mxnet.apache.org">Dev list</a></li>
+                    <li><a class="u-email" href="mailto:user@mxnet.apache.org">User mailing list</a></li>
+                    <li><a href="https://cwiki.apache.org/confluence/display/MXNET/Apache+MXNet+Home">Developer Wiki</a></li>
+                    <li><a href="https://issues.apache.org/jira/projects/MXNET/issues">Jira Tracker</a></li>
+                    <li><a href="https://github.com/apache/incubator-mxnet/labels/Roadmap">Github Roadmap</a></li>
+                    <li><a href="https://discuss.mxnet.io">MXNet Discuss forum</a></li>
+                    <li><a href="/mxnet.io-v2/community/contribute">Contribute To MXNet</a></li>
 
-    <div class="mdl-mini-footer__right-section">
+                </ul>
+            </div>
+
+            <div class="col-4"><ul class="social-media-list"><li><a href="https://github.com/apache/incubator-mxnet"><svg class="svg-icon"><use xlink:href="../../../_static/minima-social-icons.svg#github"></use></svg> <span class="username">apache/incubator-mxnet</span></a></li><li><a href="https://www.twitter.com/apachemxnet"><svg class="svg-icon"><use xlink:href="../../../_static/minima-social-icons.svg#twitter"></use></svg> <span class="username">apachemxnet</span></a></li><li><a href="https://youtube.com/apachemxnet"><svg class="svg-icon"><use xlink:href="../../../_static/minima-social-icons.svg#youtube"></use></svg> <span class="username">apachemxnet</span></a></li></ul>
+</div>
+
+            <div class="col-4 footer-text">
+                <p>A flexible and efficient library for deep learning.</p>
+            </div>
+        </div>
     </div>
 </footer>
-        </main>
+
+<footer class="site-footer2">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-3">
+                <img src="../../../_static/apache_incubator_logo.png" class="footer-logo col-2">
+            </div>
+            <div class="footer-bottom-warning col-9">
+                <p>Apache MXNet is an effort undergoing incubation at The Apache Software Foundation (ASF), <span style="font-weight:bold">sponsored by the <i>Apache Incubator</i></span>. Incubation is required
+                    of all newly accepted projects until a further review indicates that the infrastructure,
+                    communications, and decision making process have stabilized in a manner consistent with other
+                    successful ASF projects. While incubation status is not necessarily a reflection of the completeness
+                    or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.
+                </p><p>"Copyright © 2017-2018, The Apache Software Foundation Apache MXNet, MXNet, Apache, the Apache
+                    feather, and the Apache MXNet project logo are either registered trademarks or trademarks of the
+                    Apache Software Foundation."</p>
+            </div>
+        </div>
     </div>
+</footer>
+        
   </body>
 </html>
