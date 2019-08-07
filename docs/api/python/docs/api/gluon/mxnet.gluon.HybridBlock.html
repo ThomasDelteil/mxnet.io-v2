@@ -30,7 +30,7 @@
   </head>
 <body><header class="site-header" role="banner">
   <div class="wrapper">
-      <a class="site-title" rel="author" href="/"><img
+      <a class="site-title" rel="author" href="/mxnet.io-v2/"><img
             src="../../_static/mxnet_logo.png" class="site-header-logo"></a>
     <nav class="site-nav">
       <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
@@ -43,11 +43,11 @@
       </label>
 
       <div class="trigger">
-        <a class="page-link" href="/get_started">Get Started</a>
-        <a class="page-link" href="/blog">Blog</a>
-        <a class="page-link" href="/features">Features</a>
-        <a class="page-link" href="/ecosystem">Ecosystem</a>
-        <a class="page-link page-current" href="/api">Docs & Tutorials</a>
+        <a class="page-link" href="/mxnet.io-v2/get_started">Get Started</a>
+        <a class="page-link" href="/mxnet.io-v2/blog">Blog</a>
+        <a class="page-link" href="/mxnet.io-v2/features">Features</a>
+        <a class="page-link" href="/mxnet.io-v2/ecosystem">Ecosystem</a>
+        <a class="page-link page-current" href="/mxnet.io-v2/api">Docs & Tutorials</a>
         <a class="page-link" href="https://github.com/apache/incubator-mxnet">GitHub</a>
       </div>
     </nav>
@@ -2632,16 +2632,16 @@ Show Source
 <span class="n">model</span><span class="p">(</span><span class="n">mx</span><span class="o">.</span><span class="n">nd</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">ctx</span><span class="o">=</span><span class="n">mx</span><span class="o">.</span><span class="n">cpu</span><span class="p">(</span><span class="mi">0</span><span class="p">)))</span>
 </pre></div>
 </div>
-<p>Forward computation in <a class="reference internal" href="#mxnet.gluon.nn.HybridBlock" title="mxnet.gluon.nn.HybridBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">HybridBlock</span></code></a> must be static to work with <code class="xref py py-class docutils literal notranslate"><span class="pre">Symbol</span></code> s,
+<p>Forward computation in <a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock" title="mxnet.gluon.nn.HybridBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">HybridBlock</span></code></a> must be static to work with <code class="xref py py-class docutils literal notranslate"><span class="pre">Symbol</span></code> s,
 i.e. you cannot call <code class="xref py py-meth docutils literal notranslate"><span class="pre">NDArray.asnumpy()</span></code>, <code class="xref py py-attr docutils literal notranslate"><span class="pre">NDArray.shape</span></code>,
 <code class="xref py py-attr docutils literal notranslate"><span class="pre">NDArray.dtype</span></code>, <cite>NDArray</cite> indexing (<cite>x[i]</cite>) etc on tensors.
 Also, you cannot use branching or loop logic that bases on non-constant
 expressions like random numbers or intermediate results, since they change
 the graph structure for each iteration.</p>
-<p>Before activating with <a class="reference internal" href="#mxnet.gluon.nn.HybridBlock.hybridize" title="mxnet.gluon.nn.HybridBlock.hybridize"><code class="xref py py-meth docutils literal notranslate"><span class="pre">hybridize()</span></code></a>, <a class="reference internal" href="#mxnet.gluon.nn.HybridBlock" title="mxnet.gluon.nn.HybridBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">HybridBlock</span></code></a> works just like normal
-<a class="reference internal" href="mxnet.gluon.nn.Block.html#mxnet.gluon.nn.Block" title="mxnet.gluon.nn.Block"><code class="xref py py-class docutils literal notranslate"><span class="pre">Block</span></code></a>. After activation, <a class="reference internal" href="#mxnet.gluon.nn.HybridBlock" title="mxnet.gluon.nn.HybridBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">HybridBlock</span></code></a> will create a symbolic graph
+<p>Before activating with <a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock.hybridize" title="mxnet.gluon.nn.HybridBlock.hybridize"><code class="xref py py-meth docutils literal notranslate"><span class="pre">hybridize()</span></code></a>, <a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock" title="mxnet.gluon.nn.HybridBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">HybridBlock</span></code></a> works just like normal
+<a class="reference internal" href="mxnet.gluon.nn.Block.html#mxnet.gluon.nn.Block" title="mxnet.gluon.nn.Block"><code class="xref py py-class docutils literal notranslate"><span class="pre">Block</span></code></a>. After activation, <a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock" title="mxnet.gluon.nn.HybridBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">HybridBlock</span></code></a> will create a symbolic graph
 representing the forward computation and cache it. On subsequent forwards,
-the cached graph will be used instead of <a class="reference internal" href="#mxnet.gluon.nn.HybridBlock.hybrid_forward" title="mxnet.gluon.nn.HybridBlock.hybrid_forward"><code class="xref py py-meth docutils literal notranslate"><span class="pre">hybrid_forward()</span></code></a>.</p>
+the cached graph will be used instead of <a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock.hybrid_forward" title="mxnet.gluon.nn.HybridBlock.hybrid_forward"><code class="xref py py-meth docutils literal notranslate"><span class="pre">hybrid_forward()</span></code></a>.</p>
 <p>Please see references for detailed tutorial.</p>
 <p class="rubric">References</p>
 <p><a class="reference external" href="http://mxnet.io/tutorials/gluon/hybrid.html">Hybrid - Faster training and easy deployment</a></p>
@@ -2654,19 +2654,19 @@ the cached graph will be used instead of <a class="reference internal" href="#mx
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#mxnet.gluon.nn.HybridBlock.hybridize" title="mxnet.gluon.nn.HybridBlock.hybridize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HybridBlock.hybridize</span></code></a>([active])</p></td>
-<td><p>Activates or deactivates <a class="reference internal" href="#mxnet.gluon.nn.HybridBlock" title="mxnet.gluon.nn.HybridBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">HybridBlock</span></code></a> s recursively.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock.hybridize" title="mxnet.gluon.nn.HybridBlock.hybridize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HybridBlock.hybridize</span></code></a>([active])</p></td>
+<td><p>Activates or deactivates <a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock" title="mxnet.gluon.nn.HybridBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">HybridBlock</span></code></a> s recursively.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#mxnet.gluon.nn.HybridBlock.hybrid_forward" title="mxnet.gluon.nn.HybridBlock.hybrid_forward"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HybridBlock.hybrid_forward</span></code></a>(F, x, *args, **kwargs)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock.hybrid_forward" title="mxnet.gluon.nn.HybridBlock.hybrid_forward"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HybridBlock.hybrid_forward</span></code></a>(F, x, *args, **kwargs)</p></td>
 <td><p>Overrides to construct symbolic graph for this <cite>Block</cite>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#mxnet.gluon.nn.HybridBlock.export" title="mxnet.gluon.nn.HybridBlock.export"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HybridBlock.export</span></code></a>(path[, epoch, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock.export" title="mxnet.gluon.nn.HybridBlock.export"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HybridBlock.export</span></code></a>(path[, epoch, …])</p></td>
 <td><p>Export HybridBlock to json format that can be loaded by <cite>SymbolBlock.imports</cite>, <cite>mxnet.mod.Module</cite> or the C++ interface.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#mxnet.gluon.nn.HybridBlock.infer_shape" title="mxnet.gluon.nn.HybridBlock.infer_shape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HybridBlock.infer_shape</span></code></a>(*args)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock.infer_shape" title="mxnet.gluon.nn.HybridBlock.infer_shape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HybridBlock.infer_shape</span></code></a>(*args)</p></td>
 <td><p>Infers shape of Parameters from inputs.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#mxnet.gluon.nn.HybridBlock.infer_type" title="mxnet.gluon.nn.HybridBlock.infer_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HybridBlock.infer_type</span></code></a>(*args)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock.infer_type" title="mxnet.gluon.nn.HybridBlock.infer_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HybridBlock.infer_type</span></code></a>(*args)</p></td>
 <td><p>Infers data type of Parameters from inputs.</p></td>
 </tr>
 </tbody>
@@ -2681,7 +2681,7 @@ attributes will be registered automatically.</p>
 <dl class="method">
 <dt id="mxnet.gluon.nn.HybridBlock.hybridize">
 <code class="sig-name descname">hybridize</code><span class="sig-paren">(</span><em class="sig-param">active=True</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/mxnet/gluon/block.html#HybridBlock.hybridize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mxnet.gluon.nn.HybridBlock.hybridize" title="Permalink to this definition">¶</a></dt>
-<dd><p>Activates or deactivates <a class="reference internal" href="#mxnet.gluon.nn.HybridBlock" title="mxnet.gluon.nn.HybridBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">HybridBlock</span></code></a> s recursively. Has no effect on
+<dd><p>Activates or deactivates <a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock" title="mxnet.gluon.nn.HybridBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">HybridBlock</span></code></a> s recursively. Has no effect on
 non-hybrid children.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2904,7 +2904,7 @@ children’s parameters).</p>
 <dt id="mxnet.gluon.nn.HybridBlock.register_forward_hook">
 <code class="sig-name descname">register_forward_hook</code><span class="sig-paren">(</span><em class="sig-param">hook</em><span class="sig-paren">)</span><a class="headerlink" href="#mxnet.gluon.nn.HybridBlock.register_forward_hook" title="Permalink to this definition">¶</a></dt>
 <dd><p>Registers a forward hook on the block.</p>
-<p>The hook function is called immediately after <a class="reference internal" href="#mxnet.gluon.nn.HybridBlock.forward" title="mxnet.gluon.nn.HybridBlock.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a>.
+<p>The hook function is called immediately after <a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock.forward" title="mxnet.gluon.nn.HybridBlock.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a>.
 It should not modify the input or output.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2923,7 +2923,7 @@ It should not modify the input or output.</p>
 <dt id="mxnet.gluon.nn.HybridBlock.register_forward_pre_hook">
 <code class="sig-name descname">register_forward_pre_hook</code><span class="sig-paren">(</span><em class="sig-param">hook</em><span class="sig-paren">)</span><a class="headerlink" href="#mxnet.gluon.nn.HybridBlock.register_forward_pre_hook" title="Permalink to this definition">¶</a></dt>
 <dd><p>Registers a forward pre-hook on the block.</p>
-<p>The hook function is called immediately before <a class="reference internal" href="#mxnet.gluon.nn.HybridBlock.forward" title="mxnet.gluon.nn.HybridBlock.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a>.
+<p>The hook function is called immediately before <a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock.forward" title="mxnet.gluon.nn.HybridBlock.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a>.
 It should not modify the input or output.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2944,7 +2944,7 @@ It should not modify the input or output.</p>
 <dd><p>Save parameters to file.</p>
 <p>Saved parameters can only be loaded with <cite>load_parameters</cite>. Note that this
 method only saves parameters, not model structure. If you want to save
-model structures, please use <a class="reference internal" href="#mxnet.gluon.nn.HybridBlock.export" title="mxnet.gluon.nn.HybridBlock.export"><code class="xref py py-meth docutils literal notranslate"><span class="pre">HybridBlock.export()</span></code></a>.</p>
+model structures, please use <a class="reference internal" href="mxnet.gluon.nn.HybridBlock.html#mxnet.gluon.nn.HybridBlock.export" title="mxnet.gluon.nn.HybridBlock.export"><code class="xref py py-meth docutils literal notranslate"><span class="pre">HybridBlock.export()</span></code></a>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – Path to file.</p>
