@@ -16,7 +16,7 @@ Topics:
 * [Data Iterator Parameters](#parameters-for-data-iterator) clarifies the different usages for dataiter parameters.
 * [Create a Data Iterator](#create-a-data-iterator) introduces how to create a data iterator in MXNet for Scala.
 * [How to Get Data](#how-to-get-data) introduces the data resource and data preparation tools.
-* [IO API Reference](http://mxnet.incubator.apache.org/api/scala/docs/index.html#org.apache.mxnet.IO$) explains the IO API.
+* [IO API Reference]({{'/api/scala/docs/api/#org.apache.mxnet.io.package'|relative_url}}) explains the IO API.
 
 
 ## Data Iterator Parameters
@@ -169,5 +169,5 @@ For example, if you have four labels for a single image, you can use the followi
      ```
 
 ## Next Steps
-* [NDArray API](ndarray.md) for vector/matrix/tensor operations
-* [KVStore API](kvstore.md) for multi-GPU and multi-host distributed training
+* [NDArray API](ndarray) for vector/matrix/tensor operations
+* [KVStore API](kvstore) for multi-GPU and multi-host distributed training

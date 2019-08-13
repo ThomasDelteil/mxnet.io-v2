@@ -365,11 +365,11 @@ Allowing mutation mitigates these issues.
 ## Source Code of the Generic Dependency Engine
 [MXNet](https://github.com/dmlc/mxnet) provides an implementation
 of the generic dependency engine described in this page.
-You can find more details in [this topic](http://mxnet.io/architecture/note_engine.html).
+You can find more details in [this topic](note_engine).
 We welcome your contributions.
 
 ## Next Steps
 
-* [Squeeze the Memory Consumption of Deep Learning](http://mxnet.io/architecture/note_memory.html)
-* [Efficient Data Loading Module for Deep Learning](http://mxnet.io/architecture/note_data_loading.html)
+* [Squeeze the Memory Consumption of Deep Learning](note_memory)
+* [Efficient Data Loading Module for Deep Learning](note_data_loading)
 * [Survey of RNN Interface](http://mxnet.io/architecture/rnn_interface.html)

@@ -41,7 +41,7 @@ execute a bunch of functions following their dependencies.
 Execution of any two functions with dependencies should be serialized.
 To boost performance, functions with no dependencies *can* be executed in parallel.
 For a general discussion of this topic,
-see our [notes on the dependency engine](note_engine.md).
+see our [notes on the dependency engine](note_engine).
 
 ### Interface
 
