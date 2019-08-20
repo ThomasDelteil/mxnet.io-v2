@@ -11,7 +11,7 @@ permalink: /api/scala/docs/tutorials/char_lstm
 This tutorial shows how to train a character-level language model with a multilayer recurrent neural network (RNN) using Scala. This model takes one text file as input and trains an RNN that learns to predict the next character in the sequence. In this tutorial, you train a multilayer LSTM (Long Short-Term Memory) network that generates relevant text using Barack Obama's speech patterns.
 
 There are many documents that explain LSTM concepts. If you aren't familiar with LSTM, refer to the following before you proceed:
-- Christopher Olah's [Understanding LSTM blog post](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+- Christopher Olah's [Understanding LSTM blog post](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 - [Training a LSTM char-rnn in Julia to Generate Random Sentences](http://dmlc.ml/mxnet/2015/11/15/char-lstm-in-julia.html)
 - [Bucketing in MXNet in Python](https://github.com/dmlc/mxnet-notebooks/blob/master/python/tutorials/char_lstm.ipynb)
 - [Bucketing in MXNet](http://mxnet.io/faq/bucketing.html)
@@ -62,7 +62,7 @@ In this tutorial, you will accomplish the following:
 
 ## Prerequisites
 
-To complete this tutorial, setup and run the scala interpreter by following the [instructions](https://mxnet.incubator.apache.org/install/scala_setup.html#interpreter).
+To complete this tutorial, setup and run the scala interpreter by following the [instructions]({{'/get_started/scala_setup#interpreter'|relative_url}}).
 
 ## Download the Data
 
@@ -265,7 +265,7 @@ Note: The BucketSentenceIter data iterator supports various length examples; how
 
     ```
 
-5) You can set more than 100 epochs, but for this tutorial, specify 75 epochs. Each epoch can take as long as 4 minutes on a GPU. In this tutorial, you will use the [ADAM optimizer](http://mxnet.io/api/scala/docs/index.html#org.apache.mxnet.optimizer.Adam):
+5) You can set more than 100 epochs, but for this tutorial, specify 75 epochs. Each epoch can take as long as 4 minutes on a GPU. In this tutorial, you will use the [ADAM optimizer]({{'/api/scala/docs/api/#org.apache.mxnet.optimizer.Adam'|relative_url}}):
 
     ```scala
         scala> import org.apache.mxnet._
@@ -336,7 +336,7 @@ Note: The BucketSentenceIter data iterator supports various length examples; how
 
     ```
 
-8) Now, you have implemented all the supporting infrastructures for the char-lstm model. To train the model, use the standard [MXNet high-level API](http://mxnet.io/api/scala/docs/index.html#org.apache.mxnet.FeedForward). You can train the model on a single GPU or CPU from multiple GPUs or CPUs by changing ```scala .setContext(Array(Context.gpu(0),Context.gpu(1),Context.gpu(2),Context.gpu(3)))``` to ```scala .setContext(Array(Context.gpu(0)))```:
+8) Now, you have implemented all the supporting infrastructures for the char-lstm model. To train the model, use the standard [MXNet high-level API]({{'/api/scala/docs/api/#org.apache.mxnet.FeedForward'|relative_url}}). You can train the model on a single GPU or CPU from multiple GPUs or CPUs by changing ```scala .setContext(Array(Context.gpu(0),Context.gpu(1),Context.gpu(2),Context.gpu(3)))``` to ```scala .setContext(Array(Context.gpu(0)))```:
 
     ```scala
         scala> val model = FeedForward.newBuilder(symbol)
@@ -512,6 +512,6 @@ You can see the output generated from Obama's speeches. All of the line breaks, 
 
 
 ## Next Steps
-* [Scala API](http://mxnet.io/api/scala/)
+* [Scala API]({{'/api/scala'|relative_url}})
 * [More Scala Examples](https://github.com/dmlc/mxnet/tree/master/scala-package/examples/)
-* [MXNet tutorials index](http://mxnet.io/tutorials/index.html)
+* [MXNet tutorials index]({{'/api'|relative_url}})

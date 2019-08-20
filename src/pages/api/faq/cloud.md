@@ -29,7 +29,7 @@ how to set up an AWS cluster with _MXNet_. We show how to:
 ### Use Amazon S3 to Host Data
 
 Amazon S3 provides distributed data storage which proves especially convenient for hosting large datasets.
-To use S3, you need [AWS credentials](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html),
+To use S3, you need [AWS credentials](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html),
 including an `ACCESS_KEY_ID` and a `SECRET_ACCESS_KEY`.
 
 To use _MXNet_ with S3, set the environment variables `AWS_ACCESS_KEY_ID` and
@@ -42,7 +42,7 @@ export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ```
 
 There are several ways to upload data to S3. One simple way is to use
-[s3cmd](http://s3tools.org/s3cmd). For example:
+[s3cmd](https://s3tools.org/s3cmd). For example:
 
 ```bash
 wget http://data.mxnet.io/mxnet/data/mnist.zip
@@ -61,7 +61,7 @@ The AMI IDs are the following:
 * eu-west-1: ami-6e5d6808
 
 Now you can launch _MXNet_ directly on an EC2 GPU instance.  
-You can also use [Jupyter](http://jupyter.org) notebook on EC2 machine.
+You can also use [Jupyter](https://jupyter.org) notebook on EC2 machine.
 Here is a [good tutorial](https://github.com/dmlc/mxnet-notebooks)
 on how to connect to a Jupyter notebook running on an EC2 instance.
 

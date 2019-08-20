@@ -12,19 +12,19 @@ tag: cpp
 
 ## Overview
 MXNet provides various useful tools and interfaces for deploying your model for inference. For example, you can use [MXNet Model Server](https://github.com/awslabs/mxnet-model-server) to start a service and host your trained model easily.
-Besides that, you can also use MXNet's different language APIs to integrate your model with your existing service. We provide [Python](https://mxnet.incubator.apache.org/api/python/module/module.html),    [Java](https://mxnet.incubator.apache.org/api/java/index.html), [Scala](https://mxnet.incubator.apache.org/api/scala/index.html), and [C++](https://mxnet.incubator.apache.org/api/c++/index.html) APIs.
+Besides that, you can also use MXNet's different language APIs to integrate your model with your existing service. We provide [Python]({{'/api/python/docs/api/symbol-related/mxnet.module'|relative_url}}),    [Java]({{'/api/java/docs/api'|relative_url}}), [Scala]({{'/api/scala/docs/api'|relative_url}}), and [C++]({{'/api/cpp/docs/api'|relative_url}}) APIs.
 
-This tutorial is a continuation of the [Gluon end to end tutorial](https://mxnet.apache.org/versions/master/tutorials/gluon/gluon_from_experiment_to_deployment.html), we will focus on the MXNet C++ API. We have slightly modified the code in [C++ Inference Example](https://github.com/apache/incubator-mxnet/tree/master/cpp-package/example/inference) for our use case.
+This tutorial is a continuation of the [Gluon end to end tutorial](https://mxnet.apache.org/versions/master/tutorials/gluon/gluon_from_experiment_to_deployment.html), we will focus on the MXNet C++ API. We have slightly modified the code in [C++ Inference Example](https://github.com/apache/incubator-mxnet/tree/ma/example/inference) for our use case.
 
 ## Prerequisites
 
 To complete this tutorial, you need:
 - Complete the training part of [Gluon end to end tutorial](https://mxnet.apache.org/versions/master/tutorials/gluon/gluon_from_experiment_to_deployment.html)
-- Learn the basics about [MXNet C++ API](https://github.com/apache/incubator-mxnet/tree/master/cpp-package)
+- Learn the basics about [MXNet C++ API]({{'/api/cpp'|relative_url}})
 
 
 ## Setup the MXNet C++ API
-To use the C++ API in MXNet, you need to build MXNet from source with C++ package. Please follow the [built from source guide](https://mxnet.incubator.apache.org/install/ubuntu_setup.html), and [C++ Package documentation](https://github.com/apache/incubator-mxnet/tree/master/cpp-package)
+To use the C++ API in MXNet, you need to build MXNet from source with C++ package. Please follow the [built from source guide]({{'/get_started/ubuntu_setup.html'|relative_url}}), and [C++ Package documentation]({{'/api/cpp'|relative_url}})
 to enable the C++ API.
 The summary of those two documents is that you need to build MXNet from source with `USE_CPP_PACKAGE` flag set to 1. For example: `make -j USE_CPP_PACKAGE=1`.
 
@@ -266,7 +266,7 @@ Then it will predict your image:
 
 Now you can explore more ways to run inference and deploy your models:
 1. [Java Inference examples](https://github.com/apache/incubator-mxnet/tree/master/scala-package/examples/src/main/java/org/apache/mxnetexamples/javaapi/infer)
-2. [Scala Inference examples](https://mxnet.incubator.apache.org/tutorials/scala/)
+2. [Scala Inference examples]({{'/api/scala/docs/tutorials/infer'|relative_url}})
 3. [ONNX model inference examples](https://mxnet.incubator.apache.org/tutorials/onnx/inference_on_onnx_model.html)
 4. [MXNet Model Server Examples](https://github.com/awslabs/mxnet-model-server/tree/master/examples)
 
